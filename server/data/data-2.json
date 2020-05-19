@@ -1,0 +1,10 @@
+[
+    {"sexo": "hombre", "altura": 6, "peso": 180, "talla": 12},
+    {"sexo": "hombre", "altura": 5.92, "peso": 190, "talla": 11},
+    {"sexo": "hombre", "altura": 5.58, "peso": 170, "talla": 12},
+    {"sexo": "hombre", "altura": 5.92, "peso": 165, "talla": 10},
+    {"sexo": "mujer", "altura": 5, "peso": 100, "talla": 6},
+    {"sexo": "mujer", "altura": 5.5, "peso": 150, "talla": 8},
+    {"sexo": "mujer", "altura": 5.42, "peso": 130, "talla": 7},
+    {"sexo": "mujer", "altura": 5.75, "peso": 150, "talla": 9}
+]
