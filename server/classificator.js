@@ -67,6 +67,8 @@ function classification(object) {
         }
     }
 
+    console.log(aceptedVariables);
+
     return aceptedVariables;
 }
 
@@ -212,28 +214,28 @@ function clasificationBool(values, data) {
 
 // Objeto de prueba de como deber llegar al clasificador
 const example = {
-    pregnancies: 0,
+    pregnancies: 3,
     preprandial_glucose: 100,
     diastolic_blood_pressure: 60,
     triceps_skin_fold_thickness: 10,
     serum_insulin: 60,
     body_mass_index: 27.8,
-    diabetes_pedigree_function: 0.2,
+    diabetes_pedigree_function: 1.5,
     age: 25, 
-    stress_level: 200,
+    stress_level: 400,
     cholesterol: 250,
     triglyceries: 100,
     gender: 0,
-    capillar_glucose: 90,
+    capillar_glucose: 300,
     postprandial_glucose: 140,
     glycosylated_hemoglobin: 3.5,
     exercise: 0,
     sedentary_life: 0,
-    smoke: 0,
+    smoke: 1,
     alcoholism: 1,
-    fatty_fod: 0,
+    fatty_fod: 1,
     blurry_vision: 0,
-    fatigue: 0,
+    fatigue: 1,
     pain_hands_feet: 0,
     slow_healing: 1,
     drugs: 1
@@ -255,7 +257,7 @@ const example2 = {
 
 let dato = 90;
 
-console.log(classification(example));
+//console.log(classification(example));
 
 // console.log(clasificationNum(categoriesNum(datos4), dato));
 
@@ -273,4 +275,5 @@ console.log(classification(example));
 
 // console.log(datos3[0].value);
 
+module.exports = classification;
 
