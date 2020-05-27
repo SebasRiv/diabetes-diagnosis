@@ -5,7 +5,8 @@ const app = express();
 app.set('port', process.env.PORT || 4000);
 
 //middlewares
-app.use(express.json());
+//app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
 //routes
 app.use('/api/diagnosis', require('./routes/diagnosis'));
