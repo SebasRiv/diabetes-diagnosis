@@ -4,43 +4,45 @@ const diagnosisCtrl = {};
 
 const classicator = require('../classificator');
 const { flow, Diagnosis, execute } = require('../tests/expertTest2');
-const { flow: flowFuzzy, execute: executeFuzzy } = require('../tests/fuzzyTest');
+//const publicPath = require('../config/config');
 const { numVariables, boolVariables } = require('../utilities');
 
 diagnosisCtrl.getDiagnostics = (req, res) => {
-    let pathFile = path.resolve(__dirname, '../public/index.html');
+    const pathFile = path.resolve(__dirname, '../../public/index.html');
     res.status(200).sendFile(pathFile);
 }
 
 diagnosisCtrl.postDiagnosis = (req, res) => {
 
     const example = {
-        pregnancies: Number(req.body.pregnancies),
-        preprandial_glucose: Number(req.body.preprandial_glucose ), // Para sistema difuso
-        diastolic_blood_pressure: Number(req.body.diastolic_blood_pressure ),
-        triceps_skin_fold_thickness: Number(req.body.triceps_skin_fold_thickness ),
-        serum_insulin: Number(req.body.serum_insulin ),
-        body_mass_index: Number(req.body.body_mass_index  ),
-        diabetes_pedigree_function: Number(req.body.diabetes_pedigree_function),
-        age: Number(req.body.age ),
-        stress_level: Number(req.body.stress_level ),
-        cholesterol: Number(req.body.cholesterol ),
-        triglyceries: Number(req.body.triglyceries ),
-        gender: Number(req.body.gender),
-        capillar_glucose: Number(req.body.capillar_glucose ), // Para sistema difuso
-        postprandial_glucose: Number(req.body.postprandial_glucose ), // Para sistema difuso
-        glycosylated_hemoglobin: Number(req.body.glycosylated_hemoglobin), // Para sistema difuso
-        exercise: Number(req.body.exercise),
-        sedentary_life: Number(req.body.sedentary_life),
-        smoke: Number(req.body.smoke),
-        alcoholism: Number(req.body.alcoholism),
-        fatty_fod: Number(req.body.fatty_fod),
-        blurry_vision: Number(req.body.blurry_vision),
-        fatigue: Number(req.body.fatigue),
-        pain_hands_feet: Number(req.body.pain_hands_feet),
-        slow_healing: Number(req.body.slow_healing),
-        drugs: Number(req.body.drugs
-    )}
+        pregnancies: Number(req.body.embarazos),
+        preprandial_glucose: Number(req.body.gluAyunas ), // Para sistema difuso
+        diastolic_blood_pressure: Number(req.body.preSangDias ),
+        triceps_skin_fold_thickness: Number(req.body.esPliegCutTri ),
+        serum_insulin: Number(req.body.ins ),
+        body_mass_index: Number(req.body.imc  ),
+        diabetes_pedigree_function: Number(req.body.funcPediDiab),
+        age: Number(req.body.edadAnos ),
+        stress_level: Number(req.body.nivelEst ),
+        cholesterol: Number(req.body.colesterol ),
+        triglyceries: Number(req.body.trigliceridos ),
+        gender: Number(req.body.sexo),
+        capillar_glucose: Number(req.body.glucemiaCap ), // Para sistema difuso
+        postprandial_glucose: Number(req.body.glucemiaPosp ), // Para sistema difuso
+        glycosylated_hemoglobin: Number(req.body.hemoGlic), // Para sistema difuso
+        exercise: Number(req.body.ejercicioFisi),
+        sedentary_life: Number(req.body.sedentario),
+        smoke: Number(req.body.fuma),
+        alcoholism: Number(req.body.alcohol),
+        fatty_fod: Number(req.body.aliGrasos),
+        blurry_vision: Number(req.body.visBorrosa),
+        fatigue: Number(req.body.fatiga),
+        pain_hands_feet: Number(req.body.entManosPies),
+        slow_healing: Number(req.body.cicLenta),
+        drugs: Number(req.body.tratamiFarma)
+    }
+
+    console.log(example);
 
     let example2 = {
         preprandial_glucose: example.preprandial_glucose,
@@ -48,6 +50,8 @@ diagnosisCtrl.postDiagnosis = (req, res) => {
         postprandial_glucose: example.postprandial_glucose,
         glycosylated_hemoglobin: example.glycosylated_hemoglobin,
     }
+
+    console.log(example2);
 
     const object = classicator(example);
 
@@ -74,6 +78,8 @@ diagnosisCtrl.postDiagnosis = (req, res) => {
         }
     }
 
+    console.log(objectSE);
+
     const Diagnostico = new Diagnosis(...data);
 
     var session = flow.getSession();
@@ -98,12 +104,24 @@ diagnosisCtrl.postDiagnosis = (req, res) => {
     // );
 
     //res.send('Diagnostic success');
-    console.log(execute(session, res, example2, object));
+    const promise = new Promise((resolve, reject) => {
+
+        console.log(execute(session, res, example2, object));
+        resolve("Mostrando resultados");
+
+    });
     // executeFuzzy(flowFuzzy.getSession(), example2);
+
+    promise.then((resp) => {
+        console.log(resp);
+    });
 }
 
-diagnosisCtrl.getFuzzy = (req, res) => {
-
+diagnosisCtrl.getResults = (req, res) => {
+    console.log("Hola chupapijas");
+    console.log(req);
+    const pathFile = path.resolve(__dirname, '../../public/diagnostic.html');
+    res.sendFile(pathFile);
 }
 
 module.exports = diagnosisCtrl;

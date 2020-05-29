@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Diagnóstico DM2</title>
+
+	<link rel="icon" href="img/cerebroIcon.ico">
+	
+</head>
+<body>
+	
+	<!-- Latest compiled and minified CSS - Libreria de Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
+
+	<!-- Font Awesome - Liberia Iconos FontAwsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS - Librerías para trabajar con Bootstrap 4-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript - Librerías para trabajar con Bootstrap 4 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<!-- iCheck -->
+	<link rel="stylesheet" href="css/iCheck-flat-blue.css">
+	<script src="js/icheck.min.js"></script>	
+
+	<!-- DataTables 
+	https://datatables.net/-->
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap4.min.js"></script> 
+	<script src="js/dataTables.responsive.min.js"></script>
+	<script src="js/responsive.bootstrap.min.js"></script>	
+
+	<!-- SWEET ALERT 2 - Alerta suave -->	
+	<!-- https://sweetalert2.github.io/ -->
+	<script src="js/sweetalert2.all.js"></script>
+
+	<!-- ***************************************************************************************** -->
+	<!-- ***************************************************************************************** -->
+	<!-- ***************************************************************************************** -->
+
+	<!-- WORK ZONE -->
+
+	<div class="content-wrapper" style="min-height: 717px;">
+
+		<section class="content-header">
+
+			<div class="container-fluid">
+
+				<div class="row mb-2">
+
+					<div class="col-sm-12">
+
+
+					</div>
+
+					<div class="col-sm-12" align="center">
+
+					</div>
+
+				</div>
+
+			</div><!-- /.container-fluid -->
+
+		</section>
+
+		<!-- Main content -->
+		<section class="content">
+
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-12">
+
+						<!-- Default box -->
+						<div class="card card-info card-outline">
+
+							<div class="card-header">
+
+								<center>
+
+
+									<h2>
+
+										<div class='alert alert-success mt-3 small' align="center"><b><i class="fas fa-brain"></i>  <img src="public/img/imagenLogo.png" width="40px" height="40px" align="left">DIAGNÓSTICO DE DM2 USANDO UN CLASIFICADOR BAYESIANO Y SISTEMAS INTELIGENTES  <i class="fas fa-brain"></i></b><img src="public/img/imagenLogo.png" width="40px" height="40px" align="right"></div>
+
+									</h2>
+
+								</center>
+
+							</div>
+							<!-- /.card-header -->
+
+							<div class="card-body">
+
+								<form action="/api/diagnosis" method="POST">
+
+									<div class="row">
+
+										<div class="col-sm-12">
+
+											<h5>
+												<div class='alert alert-warning' align="center"><b><i class="fas fa-calculator"></i> FORMULARIO DE VARIABLES PARA DIAGNÓSTICO <i class="fas fa-calculator"></i></b></div>
+											</h5>
+
+										</div>
+
+										<div class="col-sm-4">
+
+											<div class="form-group">
+
+												<label><b>Documento paciente:</b></label>
+
+												<input type="text" class="form-control" id="documento" name="documento" placeholder="Documento paciente ..." required="">
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-8">
+
+											<div class="form-group">
+
+												<label><b>Nombre de paciente:</b></label>
+
+												<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese el nombre del paciente ..." required="">
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Número de Embarazos:</b> (<b><font color ="green">NDE</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoNumeroEmbarazos" href="#" title="¿Dudas sobre Número de Embarazos?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="embarazos" name="embarazos" placeholder="Embarazos ..." required="">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Glucosa en Ayunas:</b> (<b><font color ="green">GEA</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoGlucosaAyunas" href="#" title="¿Dudas sobre Glucosa en Ayunas?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="gluAyunas" name="gluAyunas" placeholder="Glucosa en Ayunas ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Presión Sanguinea Diastólica:</b> (<b><font color ="green">PSD</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoPresionSanguineaDiastolica" href="#" title="¿Dudas sobre Presión Sanguinea Diastólica?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="preSangDias" name="preSangDias" placeholder="Presión Sanguinea Diastólica ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Espesor Pliegue Cutaneo de Triceps:</b> (<b><font color ="green">EPC</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoEspesorPliegueCutTri" href="#" title="¿Dudas sobre Espesor del Pliegue Cutaneo de Triceps?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="esPliegCutTri" name="esPliegCutTri" placeholder="Espesor Pliegue Cutaneo Triceps ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Insulina: </b> (<b><font color ="green">INS</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoInsulina" href="#" title="¿Dudas sobre Insulina?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="ins" name="ins" placeholder="Insulina ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Indice de Masa Corporal:</b> (<b><font color ="green">IMC</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoImc" href="#" title="¿Dudas sobre Indice Masa Corporal?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="imc" name="imc" placeholder="Indice Masa Corporal ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Función Pedigrí de Diabetes:</b> (<b><font color ="green">FPD</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#inFuncionPedigriDiab" href="#" title="¿Dudas sobre Función Pedigrí Diabetes?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="funcPediDiab" name="funcPediDiab" placeholder="Función Pedigrí Diabetes ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Edad en Años:</b> (<b><font color ="green">EDA</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoEdadA" href="#" title="¿Dudas sobre Edad en Años?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="edadAnos" name="edadAnos" placeholder="Edad en Años ..." required>
+												</div>
+
+											</div>
+
+										</div>
+
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Nivel de Estrés:</b> (<b><font color ="green">NES</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoNivelEstres" href="#" title="¿Dudas sobre Nivel de Estrés?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="nivelEst" name="nivelEst" placeholder="Nivel de Estres ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Colesterol:</b> (<b><font color ="green">COL</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoColesterol" href="#" title="¿Dudas sobre Colesterol?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="colesterol" name="colesterol" placeholder="Colesterol ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Trigliceridos:</b> (<b><font color ="green">TRI</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoTrigliceridos" href="#" title="¿Dudas sobre Trigliceridos?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="trigliceridos" name="trigliceridos" placeholder="Trigliceridos ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Glucemia Capilar:</b> (<b><font color ="green">GLU</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoGlucemiaCap" href="#" title="¿Dudas sobre Glucemia Capilar?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="glucemiaCap" name="glucemiaCap" placeholder="Glucemia Capilar ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-6">
+
+											<div class="form-group">
+
+												<label><b>Glucemia Posprandial:</b> (<b><font color ="green">GPO</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoGlucemiaPosp" href="#" title="¿Dudas sobre Glucemia Posprandial?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="glucemiaPosp" name="glucemiaPosp" placeholder="Glucemia Posprandial ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-6">
+
+											<div class="form-group">
+
+												<label><b>Hemoglobina Glicosilada:</b> (<b><font color ="green">HGL</font></b>)</label>
+												<div class="input-group-append">
+													<a class="input-group-text" data-toggle="modal" data-target="#infoHemoglobGlic" href="#" title="¿Dudas sobre Hemoglobina Glicosilada?"><i class="fas fa-question"></i></a>
+													<input type="number" class="form-control" id="hemoGlic" name="hemoGlic" placeholder="Hemoglobina Glicosilada ..." required step="any">
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>Sexo</b> (<b><font color ="green">SEX</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></i></span>
+													<select class="form-control" id="sexo" name="sexo">
+														<option value="1">Femenino</option>
+														<option value="0">Masculino</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿No realiza Ejercicio Físico?</b> (<b><font color ="green">EFI</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="ejercicioFisi" name="ejercicioFisi">
+														<option value="1">Si, no realiza Ejercicio</option>
+														<option value="0">No, si realiza Ejercicio</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Es Sedentario?</b> (<b><font color ="green">SED</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="sedentario" name="sedentario">
+														<option value="1">Si, soy Sedentario</option>
+														<option value="0">No, no soy Sedentario</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Usted Fuma?</b> (<b><font color ="green">FUM</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="fuma" name="fuma">
+														<option value="1">Si, si Fumo</option>
+														<option value="0">No, no Fumo</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Usted bebe Alcohol?</b> (<b><font color ="green">ACH</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="alcohol" name="alcohol">
+														<option value="1">Si, si consumo Alcohol</option>
+														<option value="0">No, no consumo Alcohol</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Consume Alimentos Grasos?</b> (<b><font color ="green">ALI</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="aliGrasos" name="aliGrasos">
+														<option value="1">Si, come Alimentos Grasos</option>
+														<option value="0">No, no come Alimentos Grasos</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Tiene visión borrosa?</b> (<b><font color ="green">VIS</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="visBorrosa" name="visBorrosa">
+														<option value="1">Si, veo Borroso</option>
+														<option value="0">No, no veo Borroso</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Tiene constantemente Fatiga?</b> (<b><font color ="green">FAT</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="fatiga" name="fatiga">
+														<option value="1">Si, tengo Fatiga</option>
+														<option value="0">No, no tengo Fatiga</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Dolor/Entumesimiento pies/manos?</b> (<b><font color ="green">ENT</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="entManosPies" name="entManosPies">
+														<option value="1">Si, padezco Entumesimientos</option>
+														<option value="0">No, no padezco Entumesimientos</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Padece cicatrización lenta?</b> (<b><font color ="green">CIC</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="cicLenta" name="cicLenta">
+														<option value="1">Si, tengo Cicatrización Lenta</option>
+														<option value="0">No, no tengo Cicatrización Lenta</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-3">
+
+											<div class="form-group">
+
+												<label><b>¿Se encuentra en Tratamiento Farmacológico?</b> (<b><font color ="green">TFA</font></b>)</label>
+												<div class="input-group-append">
+													<span class="input-group-text" href="#"><i class="fas fa-check"></i></span>
+													<select class="form-control" id="tratamiFarma" name="tratamiFarma">
+														<option value="1">Si, estoy en un Tratamiento Farmacológico</option>
+														<option value="0">No, no estoy en un Tratamiento Farmacológico</option>
+													</select>
+												</div>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+										<div class="col-sm-12" align="center">
+
+											<div class="form-group">
+												
+												<a href="/public/diagnostic.html">
+													<button class="btn btn-success" type="submit"><i class="fas fa-check"></i>  Generar Diagnóstico</button>
+												</a>
+
+												<a href="diagnostic.html" target="_blank">
+													<button class="btn btn-danger" type="reset"><i class="fas fa-sync"></i>  Limpiar el Formulario</button>
+												</a>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+									</form> <!-- Form variables -->
+									
+								</div>
+								<!-- /.card-body -->
+
+								<div class="card-footer">
+
+									<h3>
+										<div class='alert alert-success' align="center"><b><i class="fas fa-brain"></i>  <img src="img/imagenLogo.png" width="40px" height="40px" align="left">Sistema desarrollado por:  <i class="fas fa-brain"></i></b><img src="img/imagenLogo.png" width="40px" height="40px" align="right"></div>
+									</h3>
+									<h5>
+										<div class='alert alert-warning' align="center"><b><i class="fas fa-user"></i> Juan Sebastián Medina Toro (<font color="blue"><i>juan_medina82151@elpoli.edu.co</i></font>). <i class="fas fa-user"></i> Sebastián Rivera Giraldo (<font color="blue"><i>sebastian_rivera82151@elpoli.edu.co</i></font>).</b></div>
+									</h5>
+
+									<hr>
+
+								</div>
+								<!-- /.card-footer-->
+
+							</div>
+							<!-- /.card -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+			<!-- /.content -->
+
+		</div>
+
+	</body>
+	</html>
+
+
+<!-- *********************************************************************************************************************************** -->
+<!-- *********************************************************************************************************************************** -->
+<!-- **************************************** MODALES INFORMÁTIVOS PARA BOTONES DE INPUTS ********************************************** -->
+<!-- *********************************************************************************************************************************** -->
+<!-- *********************************************************************************************************************************** -->
+<!-- *********************************************************************************************************************************** -->
+
+
+<!--=====================================
+MODAL INFO DE NUMERO DE EMBARAZOS
+======================================-->
+
+<div class="modal fade" id="infoNumeroEmbarazos" tabindex="-1" role="dialog" aria-labelledby="infoNumeroEmbarazos" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Número de Embarazos</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">En esta variable el <b> Valor mínimo es de 0 </b> y el <b>Valor máximo varia</b> según cada paciente en el número de padecimientos de embarazos. Considerese si es hombre el valor cero por defecto. Se considera evaluación por la Diabetes Gestacional.</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--=====================================
+MODAL INFO DE GLUCOSA EN AYUNAS
+======================================-->
+
+<div class="modal fade" id="infoGlucosaAyunas" tabindex="-1" role="dialog" aria-labelledby="infoGlucosaAyunas" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Glucosa en Ayunas</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>50 y 100</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>80 y 140</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>125</b></font>
+						<br>
+						<br>
+						Esta glucemia es también llamada Glucemia Prepandial y es tomada antes del consumo de la primera comida del día.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--=====================================
+MODAL INFO DE PRESIÓN SANGUINEA DIASTÓLICA
+======================================-->
+
+<div class="modal fade" id="infoPresionSanguineaDiastolica" tabindex="-1" role="dialog" aria-labelledby="infoPresionSanguineaDiastolica" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Presión Sanguinea Diastólica</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>30 y 90</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>80 y 110</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>100</b></font>
+						<br>
+						<br>
+						Presión que la sangre ejerce cuando el corazón se relaja para volver a llenarse de sangre y se calcula mediante el uso de un Esfigmomanómetro.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--=============================================
+MODAL INFO DE ESPESOR PLIEGUE CUTANEO DEL TRICEP
+=================================================-->
+
+<div class="modal fade" id="infoEspesorPliegueCutTri" tabindex="-1" role="dialog" aria-labelledby="infoEspesorPliegueCutTri" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Espesor Pliegue Cutaneo del Triceps</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0 y 35</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>30 y 65</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>60</b></font>
+						<br>
+						<br>
+						Se trata de un pellizco al espesor de la capa de piel del tricep y se calcula mediante un Body Fat Caliper.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--==================================
+MODAL INFO DE INSULINA
+======================================-->
+
+<div class="modal fade" id="infoInsulina" tabindex="-1" role="dialog" aria-labelledby="infoInsulina" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Insulina</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0 y 260</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>240 y 430</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>400</b></font>
+						<br>
+						<br>
+						Hormona polipeptídica que interviene en el aprovechamiento metabólico de los nutrientes y se calcula mediante análisis de sangre.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--=====================================
+MODAL INFO DE INDICE DE MASA CORPORAL
+=========================================-->
+
+<div class="modal fade" id="infoImc" tabindex="-1" role="dialog" aria-labelledby="infoImc" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Indice de Masa Corporal</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>18.5 y 30</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>25 y 44.5</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>40</b></font>
+						<br>
+						<br>
+						Razón matemática que asocia la masa y la talla de un individuo para identificar la obesidad y se calcula mediante la fórmula:
+						<div class="form-control" align="center">
+							<img src="img/IMC_formula.jpg" width="300px" height="120px" align="center">
+						</div>
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--=========================================
+MODAL INFO DE FUNCIÓN PEDOGRÍ DE DIABETES
+=============================================-->
+
+<div class="modal fade" id="inFuncionPedigriDiab" tabindex="-1" role="dialog" aria-labelledby="inFuncionPedigriDiab" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Función Pedigrí de la Diabetes</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0.08 y 0.55</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>0.5 y 1.6</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>1.5</b></font>
+						<br>
+						<br>
+						Función que provee una síntesis de la historia de la DM2 en familiares y relaciones genéticas de un paciente y se calcula:
+						<br>
+						<div class="form-control" align="center">
+							<img src="img/FPD_formula.jpg" width="300px" height="120px" align="center">
+						</div>
+						<p align="center">
+							Donde: <br>
+							<b>i:</b> Rango de todos los familiares que han desarrollado DM2. <br>
+							<b>j:</b> Rango de todos los familiares que no han desarrollado DM2. <br>
+							<b>Kx:</b> % Genes compartido con el familiar X. <br>
+							<b>ADMi:</b> Edad en años del pariente X cunado le fue diagnosticado DM2. <br>
+							<b>ALCj:</b> Edad en la que el pariente J se le diagnóstico que no poseía DM2. 
+							<br>
+							<br>
+						</p>
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--==================================
+MODAL INFO DE EDAD EN AÑOS
+======================================-->
+
+<div class="modal fade" id="infoEdadA" tabindex="-1" role="dialog" aria-labelledby="infoEdadA" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Edad en Años</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0 y 25</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>20 y 45</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>40</b></font>
+						<br>
+						<br>
+						Años que ha vivido una persona y se calcula: Fecha actual menos la fecha de nacimiento.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--==================================
+MODAL INFO DE NIVEL DE ESTRES
+======================================-->
+
+<div class="modal fade" id="infoNivelEstres" tabindex="-1" role="dialog" aria-labelledby="infoNivelEstres" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Nivel de Estrés</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0 y 125</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>100 y 350</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>320</b></font>
+						<br>
+						<br>
+						Nivel de sobrecarga mental y fatídica de un paciente y se calcula por medio de un test de pregunta al paciente.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--==================================
+MODAL INFO DE COLESTEROL
+======================================-->
+
+<div class="modal fade" id="infoColesterol" tabindex="-1" role="dialog" aria-labelledby="infoColesterol" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Colesterol</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0 y 200</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>180 y 240</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>225</b></font>
+						<br>
+						<br>
+						Lípido que se encuentra en la membrana plasmática que regula la entrada y salida de sustancias a las células de un paciente y se calcula por medio de exámenes de médicos.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--==================================
+MODAL INFO DE TRIGLICERIDOS
+======================================-->
+
+<div class="modal fade" id="infoTrigliceridos" tabindex="-1" role="dialog" aria-labelledby="infoTrigliceridos" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Trigliceridos</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0 y 160</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>150 y 500</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>470</b></font>
+						<br>
+						<br>
+						Se trata del tipo más común de grasa en el cuerpo de un paciente y se calcula por medio de exámenes médicos.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--==================================
+MODAL INFO DE GLUCEMIA CAPILAR
+======================================-->
+
+<div class="modal fade" id="infoGlucemiaCap" tabindex="-1" role="dialog" aria-labelledby="infoGlucemiaCap" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Glucemia Capilar</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>50 y 200</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>180 y 260</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>250</b></font>
+						<br>
+						<br>
+						Medida de concentración de glucosa libre en la sangre en cualquier momento del día, define directamente el azúcar y se calcula por medio del glucómetro.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--==================================
+MODAL INFO DE GLUCEMIA POSPRANDIAL
+======================================-->
+
+<div class="modal fade" id="infoGlucemiaPosp" tabindex="-1" role="dialog" aria-labelledby="infoGlucemiaPosp" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Glucemia Posprandial</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>50 y 150</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>140 y 210</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>200</b></font>
+						<br>
+						<br>
+						Medida de concentración de glucosa en la sangre después de la ingesta de una comida principal, se calcula mediante el uso de glucómetro.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--====================================
+MODAL INFO DE HEMOGLOBINA GLICOSILADA
+========================================-->
+
+<div class="modal fade" id="infoHemoglobGlic" tabindex="-1" role="dialog" aria-labelledby="infoHemoglobGlic" aria-hidden="true"> 
+
+	<div class="modal-dialog modal-dialog-centered" style="max-width: 550px!important;" role="document">
+
+		<div class="modal-content">
+
+			<div class="modal-header bg-dark">
+
+				<h4 class="modal-title text-white">Hemoglobina Glicosilada</h4>
+
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="input-group mb-3">
+
+					<p align="justify">
+						En esta variable, los valores <b>NORMALES</b> oscilan entre <font color="blue"><b>0 y 5.6</b></font><br>  
+						En esta variable, los valores <b>PRE DIABÉTICOS</b> oscilan entre <font color="blue"><b>5.5 y 6.4</b></font><br>
+						En esta variable, los valores <b>DIABETES</b> son mayores de <font color="blue"><b>6</b></font>
+						<br>
+						<br>
+						Resultado de la glucosa con la hemoglobina en la sangre combinado con elementos carbonatados en la sangre, es decir, otros alimentos y se calcula mediante exámenes de laboratorio.
+					</p>   
+
+				</div>     
+
+			</div>
+
+			<div class="modal-footer" align="center">
+
+				<div align="center">
+
+					<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="far fa-times-circle"></i> Cerrar ventana Informativa</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

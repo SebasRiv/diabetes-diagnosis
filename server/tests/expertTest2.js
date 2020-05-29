@@ -65,7 +65,7 @@ var normal = 0;
 var prediabetes = 0;
 var diabetes = 0;
 
-//var peso;
+var peso = 0;
 var totalWeight = 0;
 
 let activated = [];
@@ -250,9 +250,7 @@ var flow = nools.flow("Diagnosis", function (flow) {
     flow.rule("rule30", [Diagnosis, "d", "d.drugs == 1"], function (facts) {
         totalWeight += 6;
         peso = totalWeight;
-        console.log(totalWeight);
         activated.push({regla:"rule30", descripcion: "valor de drugs es 'Si'"});
-        console.log(activated);
         totalWeight = 0;
         reglas = activated;
         activated = [];
@@ -277,15 +275,21 @@ function execute(session, res, values, variables) {
             function () {
                 //all done!
                 console.log("All done!");
-                pato = peso;
-                let result = {"variables seleccionadas": variables, "peso final SE": pato, "reglas activadas SE": reglas}
+                console.log("Peso del sistema experto", totalWeight);
+                console.log("Reglas activadas", activated);
+                console.log("------");
+                //pato = totalWeight;
+                let result = {"variables seleccionadas": variables, "peso final SE": totalWeight, "reglas activadas SE": activated}
 
                 let sessionFuzzy = flowFuzzy.getSession();
-                values.peso = pato;
+                //console.log(result);
+                values.peso = totalWeight;
                 executeFuzzy(sessionFuzzy, values, result, res);
-                console.log("Este es: " + pato);
-                resolve(pato);
-                //res.status(200).json({pesoSE: pato, reglas: reglas});
+                //console.log("Este es: " + pato);
+                resolve(totalWeight);
+                totalWeight = 0;
+                activated = [];
+
                 session.dispose();
                 session = flow.getSession();
             },
@@ -298,6 +302,7 @@ function execute(session, res, values, variables) {
     promise.then((res) => {
         pato = res;
         console.log(res);
+        console.log("-----");
     });
 }
 

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Diagnóstico DM2</title>
+	<link rel="icon" href="public/img/cerebrito.png">
+</head>
+<body>
+
+	<!-- Latest compiled and minified CSS - Libreria de Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
+
+	<!-- Font Awesome - Liberia Iconos FontAwsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS - Librerías para trabajar con Bootstrap 4-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript - Librerías para trabajar con Bootstrap 4 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<!-- iCheck -->
+	<link rel="stylesheet" href="public/css/iCheck-flat-blue.css">
+	<script src="public/js/icheck.min.js"></script>	
+
+	<!-- DataTables 
+	https://datatables.net/-->
+	<script src="public/js/jquery.dataTables.min.js"></script>
+	<script src="public/js/dataTables.bootstrap4.min.js"></script> 
+	<script src="public/js/dataTables.responsive.min.js"></script>
+	<script src="public/js/responsive.bootstrap.min.js"></script>	
+
+	<!-- SWEET ALERT 2 - Alerta suave -->	
+	<!-- https://sweetalert2.github.io/ -->
+	<script src="public/js/sweetalert2.all.js"></script>
+
+	<!-- ***************************************************************************************** -->
+	<!-- ***************************************************************************************** -->
+	<!-- ***************************************************************************************** -->
+
+	<!-- WORK ZONE -->
+
+	<div class="content-wrapper" style="min-height: 717px;">
+
+		<section class="content-header">
+
+			<div class="container-fluid">
+
+				<div class="row mb-2">
+
+					<div class="col-sm-12">
+
+
+					</div>
+
+					<div class="col-sm-12" align="center">
+
+					</div>
+
+				</div>
+
+			</div><!-- /.container-fluid -->
+
+		</section>
+
+		<!-- Main content -->
+		<section class="content">
+
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-12">
+
+						<!-- Default box -->
+						<div class="card card-info card-outline">
+
+							<div class="card-header">
+
+								<center>
+
+
+									<h2>
+
+										<div class='alert alert-success mt-3 small' align="center"><b><i class="fas fa-brain"></i>  <img src="public/img/imagenLogo.png" width="40px" height="40px" align="left">DIAGNÓSTICO DE DM2 USANDO UN CLASIFICADOR BAYESIANO Y SISTEMAS INTELIGENTES  <i class="fas fa-brain"></i></b><img src="public/img/imagenLogo.png" width="40px" height="40px" align="right"></div>
+
+									</h2>
+
+								</center>
+
+							</div>
+							<!-- /.card-header -->
+
+							<div class="card-body">
+
+								<!-- Formulario de variables seleccionadas por clasificador -->								
+								<form action="#" method="POST">
+
+									<div class="row">
+
+										<!-- Resultado final mostrado en primera instancia -->
+
+										<div class="col-sm-12">
+
+											<h5>
+												<div class='alert alert-primary' align="center"><b><i class="fas fa-brain"></i> El paciente actualmente padece <b><font color="red">Pre Diabetes</font></b> en lo que respecta Diabetes Mellitus Tipo 2 <i class="fas fa-brain"></i></b></div>
+											</h5>
+
+										</div>
+
+										<!-- Definición de detalle -->									
+
+										<div class="col-sm-12">
+
+											<h5>
+												<div class='alert alert-warning' align="center"><b><i class="fas fa-brain"></i> DETALLE DE DIAGNÓSTICO - EXPLICACIÓN PARA SE Y SD <i class="fas fa-brain"></i></b></div>
+											</h5>
+
+										</div>
+
+										<!-- Clasificador, variables clasificadas y seleccionadas -->
+
+										<div class="col-sm-5">
+
+											<div class="card">
+
+												<div class="card-header">
+
+													<h3 class="card-title" align="center"><b>Variables seleccionadas por el Clasificador</b></h3>
+
+												</div>
+
+												<table class="table table-bordered table-striped dt-responsive table-hover" width="100%">
+
+													<thead class="thead-dark">
+
+														<tr>
+
+															<th style="width:10px">#</th>
+															<th style="width:100px">Variable Clasificada</th>
+															<th>Tipo de Variable</th>
+															<th>Valor de Variable</th>
+
+														</tr>
+
+													</thead>
+
+													<tbody>
+
+														<tr>
+
+															<td>1</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Prepandial o en Ayunas</span></h5></td>
+															<td>Distribución Gaussiana</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>2</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Posprandial</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>3</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Capilar</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>4</td>
+															<td><h5><span class="badge badge-secondary">Hemoglobina Glicosilada</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>5</td>
+															<td><h5><span class="badge badge-secondary">Insulina</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>6</td>
+															<td><h5><span class="badge badge-secondary">Trigliceridos</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>7</td>
+															<td><h5><span class="badge badge-secondary">Ejercicio Físico</span></h5></td>
+															<td>Binomial - Distribución Bernoulli</td>
+															<td><h5><span class="badge badge-success">Verdadero</span></h5></td>
+
+														</tr>
+
+														<tr>
+
+															<td>8</td>
+															<td><h5><span class="badge badge-secondary">Alimentos Grasos</span></h5></td>
+															<td>Binomial - Distribución Bernoulli</td>
+															<td><h5><span class="badge badge-success">Verdadero</span></h5></td>
+
+														</tr>
+
+													</tbody>
+
+													<tfoot class="thead-dark"> 
+
+														<th style="width:10px">#</th>
+														<th style="width:100px">Variable Clasificada</th>
+														<th>Tipo de Variable</th>
+														<th>Valor de Variable</th>
+
+													</tfoot>
+
+												</table>
+
+											</div>
+
+										</div>
+
+										<!-- Sistema experto, mostrando pesos -->
+
+										<div class="col-sm-7">
+
+											<div class="card">
+
+												<div class="card-header">
+
+													<h3 class="card-title" align="center"><b>Variables procesadas en Sistema Experto</b></h3>
+
+												</div>
+
+												<table class="table table-bordered table-striped dt-responsive table-hover" width="100%">
+
+													<thead class="thead-dark">
+
+														<tr>
+
+															<th style="width:10px">#</th>
+															<th style="width:260px">Variable Clasificada</th>
+															<th>Tipo de Variable</th>
+															<th>Valor de Variable</th>
+															<th>Estado</th>
+															<th>Peso</th>
+
+														</tr>
+
+													</thead>
+
+													<tbody>
+
+														<tr>
+
+															<td>1</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Prepandial o en Ayunas</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+															<td>Pre Diabetes</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>2</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Posprandial o en Ayunas</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+															<td>Normal</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>3</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Capilar</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+															<td>Normal</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>4</td>
+															<td><h5><span class="badge badge-secondary">Hemoglobina Glicosilada</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+															<td>Pre Diabetes</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>5</td>
+															<td><h5><span class="badge badge-secondary">Insulina</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+															<td>Pre Diabetes</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>6</td>
+															<td><h5><span class="badge badge-secondary">Trigliceridos</span></h5></td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td>###</td>
+															<td>Normal</td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>7</td>
+															<td><h5><span class="badge badge-secondary">¿Ejercicio Físico?</span></h5></td>
+															<td>Binomial - Distribución de Bernoulli</td>
+															<td>###</td>
+															<td><h5><span class="badge badge-success">Verdadero</span></h5></td>
+															<td>###</td>
+
+														</tr>
+
+														<tr>
+
+															<td>8</td>
+															<td><h5><span class="badge badge-secondary">¿Alimentos Grasos?</span></h5></td>
+															<td>Binomial - Distribución de Bernoulli</td>
+															<td>###</td>
+															<td><h5><span class="badge badge-success">Verdadero</span></h5></td>
+															<td>###</td>
+
+														</tr>
+
+													</tbody>
+
+													<tfoot class="thead-dark"> 
+
+														<th style="width:10px">#</th>
+														<th style="width:260px">Variable Clasificada</th>
+														<th>Tipo de Variable</th>
+														<th>Valor de Variable</th>
+														<th>Estado</th>
+														<th>Peso</th>
+
+													</tfoot>
+
+												</table>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+										<!-- Sistema experto, MOSTRANDO REGLAS EJECUTADAS :v -->
+
+										<div class="col-sm-12">
+
+											<div class="card">
+
+												<div class="card-header">
+
+													<h3 class="card-title" align="center"><b>Reglas Ejecutadas Sistema Experto</b></h3>
+
+												</div>
+
+												<table class="table table-bordered table-striped dt-responsive table-hover" width="100%">
+
+													<thead class="thead-dark">
+
+														<tr>
+
+															<th style="width:10px">#</th>
+															<th style="width:260px">Regla</th>
+															<th>Descripción</th>
+
+														</tr>
+
+													</thead>
+
+													<tbody>
+
+														<tr>
+
+															<td>1</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # a</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>2</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # b</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>3</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # c</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>4</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # d</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>5</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # e</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>6</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # f</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>7</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # g</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>8</td>
+															<td><h5><span class="badge badge-secondary">Regla SE # h</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+													</tbody>
+
+													<tfoot class="thead-dark"> 
+
+														<th style="width:10px"></th>
+														<th style="width:260px"></th>
+														<th><p align="right">PESO FINAL GENERADO POR EL SISTEMA EXPERTO: <button type="button" class="btn btn-secondary"><b>XXXXX</b></button></p></th>
+
+													</tfoot>
+
+												</table>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+										<!-- Apartado para el Sistema Difuso -->
+
+										<div class="col-sm-5">
+
+											<div class="card">
+
+												<div class="card-header">
+
+													<h3 class="card-title" align="center"><b>Variables procesadas en Sistema Difuso</b></h3>
+
+												</div>
+
+												<table class="table table-bordered table-striped dt-responsive table-hover" width="100%">
+
+													<thead class="thead-dark">
+
+														<tr>
+
+															<th style="width:10px">#</th>
+															<th style="width:260px">Variable</th>
+															<th style="width:260px">Valor Variable</th>
+															<th style="width:260px">Tipo Variable</th>
+															<th>Estado</th>
+
+														</tr>
+
+													</thead>
+
+													<tbody>
+
+														<tr>
+
+															<td>1</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Prepandial o en Ayunas</span></h5></td>
+															<td>###</td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td><button type="button" class="btn btn-success"> Normal</button></td>
+
+														</tr>
+
+														<tr>
+
+															<td>2</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Posprandial</span></h5></td>
+															<td>###</td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td><button type="button" class="btn btn-warning text-white"> Pre Diabetes</button></td>
+
+														</tr>
+
+														<tr>
+
+															<td>3</td>
+															<td><h5><span class="badge badge-secondary">Glucemia Capilar</span></h5></td>
+															<td>###</td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td><button type="button" class="btn btn-danger"> Diabetes</button></td>
+
+														</tr>
+
+														<tr>
+
+															<td>4</td>
+															<td><h5><span class="badge badge-secondary">Hemoglobina Glicosilada</span></h5></td>
+															<td>###</td>
+															<td>Numérica - Distribución Gaussiana</td>
+															<td><button type="button" class="btn btn-success"> Normal</button></td>
+
+														</tr>
+
+														<tr>
+
+															<td>5</td>
+															<td><h5><span class="badge badge-secondary">Peso Salida SE</span></h5></td>
+															<td>###</td>
+															<td>No aplica</td>
+															<td><button type="button" class="btn btn-warning text-white"> Pre Diabetes</button></td>
+
+														</tr>
+
+													</tbody>
+
+													<tfoot class="thead-dark"> 
+
+														<th style="width:10px">#</th>
+														<th style="width:260px">Variable</th>
+														<th style="width:260px">Valor Variable</th>
+														<th style="width:260px">Tipo Variable</th>
+														<th>Estado</th>
+
+													</tfoot>
+
+												</table>
+
+											</div>
+
+										</div>
+
+										<!-- Apartado para el Sistema Difuso -->
+
+										<div class="col-sm-7">
+
+											<div class="card">
+
+												<div class="card-header">
+
+													<h3 class="card-title" align="center"><b>Reglas Ejecutadas Sistema Difuso</b></h3>
+
+												</div>
+
+												<table class="table table-bordered table-striped dt-responsive table-hover" width="100%">
+
+													<thead class="thead-dark">
+
+														<tr>
+
+															<th style="width:10px">#</th>
+															<th style="width:260px">Regla</th>
+															<th style="width:260px">Descripción</th>
+
+														</tr>
+
+													</thead>
+
+													<tbody>
+
+														<tr>
+
+															<td>1</td>
+															<td><h5><span class="badge badge-secondary">Regla SD # a</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>2</td>
+															<td><h5><span class="badge badge-secondary">Regla SD # b</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+														<tr>
+
+															<td>c</td>
+															<td><h5><span class="badge badge-secondary">Regla SD # a</span></h5></td>
+															<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+															proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+
+														</tr>
+
+													</tbody>
+
+													<tfoot class="thead-dark"> 
+
+														<th style="width:10px"></th>
+														<th style="width:260px"></th>
+														<th><p align="right">SALIDA DIFUSA:  <button type="button" class="btn btn-secondary"><b>"XXX"</b></button> ETIQUETA LINGÜISTICA DIFUSA:  <button type="button" class="btn btn-secondary"><b>"Pre Diabetes"</b></button></p></th>
+
+													</tfoot>
+
+												</table>
+
+											</div>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+										<div class="col-sm-12" align="center">
+
+											<button type="button" class="btn btn-success"><i class="far fa-save"></i> Guardar Diagnóstico de DM2 y Finalizar <i class="far fa-save"></i></button>
+
+										</div>
+
+										<div class="col-sm-12">
+
+											<hr/>
+
+										</div>
+
+
+									</form> <!-- Form variables seleccionadas por clasificador -->
+
+								</div>
+
+								<div class="card-footer">
+
+									<h3>
+										<div class='alert alert-success' align="center"><b><i class="fas fa-brain"></i>  <img src="public/img/imagenLogo.png" width="40px" height="40px" align="left">Sistema desarrollado por:  <i class="fas fa-brain"></i></b><img src="public/img/imagenLogo.png" width="40px" height="40px" align="right"></div>
+									</h3>
+									<h5>
+										<div class='alert alert-warning' align="center"><b><i class="fas fa-user"></i> Juan Sebastián Medina Toro (<font color="blue"><i>juan_medina82151@elpoli.edu.co</i></font>). <i class="fas fa-user"></i> Sebastián Rivera Giraldo (<font color="blue"><i>sebastian_rivera82151@elpoli.edu.co</i></font>).</b></div>
+									</h5>
+
+									<hr>
+
+								</div>
+								<!-- /.card-footer-->
+
+							</div>
+							<!-- /.card -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+			<!-- /.content -->
+
+		</div>
+
+	</body>
+	</html>
