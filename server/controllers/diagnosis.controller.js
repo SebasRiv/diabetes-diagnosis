@@ -2,10 +2,10 @@ const path = require('path');
 
 const diagnosisCtrl = {};
 
-const classicator = require('../classificator');
+const classicator = require('../utils/classificator');
 const { flow, Diagnosis, execute } = require('../tests/expertTest2');
 //const publicPath = require('../config/config');
-const { numVariables, boolVariables } = require('../utilities');
+const { numVariables, boolVariables } = require('../utils/utilities');
 
 diagnosisCtrl.getDiagnostics = (req, res) => {
     const pathFile = path.resolve(__dirname, '../../public/index.html');
