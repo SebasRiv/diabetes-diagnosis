@@ -23,6 +23,7 @@ const salidaDifuso = document.getElementById('salidaDifuso');
 const vairablesDif = document.getElementById('variablesDifuso');
 const etiquetaDifuso = document.getElementById('etiquetaDifuso');
 const diagnostico = document.getElementById('diagnostico');
+const usuarioData = document.getElementById('usuarioData');
 
 const boton = document.getElementById('guardar');
 const descarga = document.getElementById('descargar');
@@ -392,6 +393,7 @@ pesoSE.innerHTML = resultados["peso final SE"];
 salidaDifuso.innerHTML = resultados["Valor del sistema difuso"];
 etiquetaDifuso.innerHTML = resultados["Diagnostico de SD"];
 diagnostico.innerHTML = resultados["Diagnostico de SD"];
+usuarioData.innerHTML = `El paciente: <b>${usuario.nombre}</b> con documento: <b>${usuario.documento}</b> actualmente padece `;
 
 // console.log(variablesDifuso);
 // console.log(resultados);

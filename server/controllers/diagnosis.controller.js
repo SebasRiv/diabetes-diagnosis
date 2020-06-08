@@ -118,7 +118,11 @@ diagnosisCtrl.download = async (req, res) => {
 
     const { usuario, variablesDifuso, resultados } = req.body;
 
-    const path = __dirname + '/../uploads/report.pdf';
+    const fecha = new Date();
+
+    let nombreArchivo = `${usuario.nombre}-${usuario.documento}-${fecha.getFullYear()}-${fecha.getMonth()}-${fecha.getDate()}-${fecha.getMilliseconds()}.pdf`
+
+    const path = __dirname + `/../uploads/${nombreArchivo}`;
 
     (async function () {
         try {
@@ -360,12 +364,15 @@ diagnosisCtrl.download = async (req, res) => {
         } catch (error) {
             console.log('our error', e);
         }
-    })();
-
-    var data = fs.readFileSync(__dirname + '/../uploads/report.pdf');
-    res.contentType("application/pdf");
-    res.send(data);
-
+    })().then(() => {
+        var data = fs.readFileSync(__dirname + `/../uploads/${nombreArchivo}`);
+        res.contentType("application/pdf");
+        res.send(data);
+    }).then(() => {
+        fs.unlinkSync(__dirname + `/../uploads/${nombreArchivo}`);
+    }).catch(err => {
+        res.send(err);
+    });
 }
 
 module.exports = diagnosisCtrl;

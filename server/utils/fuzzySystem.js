@@ -391,7 +391,7 @@ function execute(session, objecto, result, res) {
         function () {
             let valor = centroide(object);
             //Se hace el metodo del centroide para hallar la salida del sistema difuso
-            result["Valor del sistema difuso"] = valor;
+            result["Valor del sistema difuso"] = valor.toFixed(2);
             result["Reglas activadas SD"] = activadas;
             if (valor > 0 && valor <= 25) {
                 Diagnostico = "Normal";
