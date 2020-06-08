@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 const puppeteer = require('puppeteer');
 
 const Diagnostico = require('../models/diagnosis');
@@ -8,17 +7,11 @@ const diagnosisCtrl = {};
 
 const classicator = require('../utils/classificator');
 const { flow, Diagnosis, execute } = require('../utils/expertSystem');
-//const publicPath = require('../config/config');
 const { numVariables, boolVariables } = require('../utils/utilities');
 
 diagnosisCtrl.getDiagnostics = (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    const body = req.body;
-
-    const pathFile = path.resolve(__dirname, '../../public/index.html');
-    // res.status(200).sendFile(pathFile);
-    //res.send("All right!");
-    res.json({ message: "pija por el culo", body });
+    res.send("All right!");
 }
 
 diagnosisCtrl.postDiagnosis = (req, res) => {
@@ -51,16 +44,12 @@ diagnosisCtrl.postDiagnosis = (req, res) => {
         drugs: Number(req.body.tratamiFarma)
     }
 
-    console.log(example);
-
     let fuzzyVariables = {
         preprandial_glucose: example.preprandial_glucose,
         capillar_glucose: example.capillar_glucose,
         postprandial_glucose: example.postprandial_glucose,
         glycosylated_hemoglobin: example.glycosylated_hemoglobin,
     }
-
-    console.log(fuzzyVariables);
 
     const activated = [];
     const object = classicator(example);
@@ -90,21 +79,17 @@ diagnosisCtrl.postDiagnosis = (req, res) => {
         }
     }
 
-    console.log(objectSE);
-
     const Diagnostico = new Diagnosis(...data);
 
     var session = flow.getSession();
 
     session.assert(Diagnostico);
-    //res.send('Diagnostic success');
     const promise = new Promise((resolve, reject) => {
 
         console.log(execute(session, res, fuzzyVariables, activated));
         resolve("Mostrando resultados");
 
     });
-    // executeFuzzy(flowFuzzy.getSession(), example2);
 
     promise.then((resp) => {
         console.log(resp);
@@ -132,10 +117,6 @@ diagnosisCtrl.getResult = async (req, res) => {
 diagnosisCtrl.download = async (req, res) => {
 
     const { usuario, variablesDifuso, resultados } = req.body;
-
-    // console.log(usuario);
-    // console.log(variablesDifuso);
-    // console.log(resultados["reglas activadas SE"]);
 
     const path = __dirname + '/../uploads/report.pdf';
 
@@ -381,48 +362,9 @@ diagnosisCtrl.download = async (req, res) => {
         }
     })();
 
-    //     const doc = new PDF();
-
-    //     doc.pipe(fs.createWriteStream(__dirname + '/../uploads/example.pdf'));
-
-    //     doc.text('Hola mundo PdfKit pija por el culo', {
-    //         align: 'center'
-    //     });
-
-    //     const parrafo = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec elit maximus, iaculis sapien nec, tincidunt dolor. Cras euismod neque id massa malesuada euismod. Donec nec vulputate orci. Donec eget pharetra metus. Etiam vitae efficitur elit. Curabitur sed augue nec ipsum bibendum ullamcorper. Suspendisse eget egestas ligula, eu posuere tortor. Morbi faucibus turpis at laoreet vestibulum. Phasellus mauris nulla, ultrices et vehicula at, mattis vel purus. Ut finibus vulputate fringilla. Proin sit amet fringilla purus. Aliquam erat volutpat.
-
-    // Nunc feugiat ac lorem vitae elementum. Integer non ligula semper, bibendum massa vel, pharetra lacus. Suspendisse potenti. Suspendisse sollicitudin ut odio vel condimentum. Nam finibus sodales nulla eu posuere. Aliquam quis turpis tortor. In interdum lacinia ante. Pellentesque id lectus purus. Proin eu sem orci. Fusce dignissim eu diam et scelerisque.
-
-    // Donec sed maximus tellus. Phasellus vel tincidunt augue, ac sagittis risus. Proin nunc augue, auctor at libero et, gravida pulvinar odio. Donec id efficitur sem, et interdum ipsum. Curabitur orci ipsum, mollis sit amet dolor eu, congue gravida mi. Nam finibus, tortor sit amet efficitur tincidunt, tortor quam viverra nisl, nec auctor arcu nisl ut risus. Curabitur tincidunt est magna, eget interdum lectus laoreet non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In consectetur, felis eget ornare pharetra, erat ex bibendum sem, nec imperdiet dui mauris vel ante. Morbi ut luctus metus. Integer neque lectus, vulputate eget luctus sed, pharetra quis dui. Aenean volutpat elit orci, non sodales risus pulvinar eu. Donec tempus odio sit amet felis cursus, ac aliquet tellus sollicitudin.
-
-    // Nulla facilisi. Cras eget augue scelerisque, vehicula purus nec, hendrerit lorem. Praesent arcu augue, gravida ut urna id, aliquam consequat dui. Quisque pharetra mollis odio vitae convallis. Proin euismod, sem sit amet finibus molestie, sapien purus lacinia odio, ac vehicula ligula mi suscipit ligula. Sed sodales augue eget lobortis volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce id dui eget est commodo porta. Cras sollicitudin sapien pretium massa venenatis, at lobortis tortor hendrerit. Cras ultrices ultrices aliquet. Nunc auctor sodales luctus. Ut gravida sapien lobortis risus egestas malesuada. Praesent malesuada lacinia lorem, nec dignissim neque tempus vel. Nulla ac sodales ligula. Morbi commodo gravida tellus non tempus.`
-
-    //     doc.text(parrafo, {
-    //         columns: 1,
-    //         align: 'justify'
-    //     });
-
-    //     doc.end();
-
-    //res.json('PDF created');
-    // res.contentType("application/pdf");
-    // res.download(__dirname + '/../uploads/example.pdf');
-
-    // var filestream = fs.createReadStream(__dirname + '/../uploads/example.pdf');
-    // // var stat = fs.statSync(__dirname + '/../uploads/example.pdf');
-    // // res.setHeader('Content-Length', stat.size);
-    // res.header('Content-type', 'application/pdf');
-    // res.header('Content-disposition', 'inline; filename=example.pdf');
-    // filestream.pipe(res);
     var data = fs.readFileSync(__dirname + '/../uploads/report.pdf');
     res.contentType("application/pdf");
     res.send(data);
-
-    // fs.readFile(__dirname + '/../uploads/example.pdf', function (err, data){
-    //     // console.log(data);
-    //     // res.contentType("application/pdf");
-    //     res.send(data);
-    //  });
 
 }
 

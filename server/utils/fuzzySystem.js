@@ -3,14 +3,6 @@ const nools = require('nools');
 const { Trapezoid, Triangle } = require('./Shapes');
 const { descriptions } = require('./utilities');
 
-/* let triangle = new Triangle(450, 550, 700, 0);
-let trapezoid = new Trapezoid(-20, -10, -5, 0);  */
-
-// function fuzzy(valorPeso, valorGluPre, valorGluCap Diagnostico = ";}";
-// i, valorGluPost, valorHemoGli) { }
-
-// Variables if(object.""; > 0) {Diagnostico = ";}";
-
 // Arreglo donde se mostraran las reglas seleccionadas del difuso
 let activadas = [];
 
@@ -27,41 +19,6 @@ glucoCapi.push(new Trapezoid(0, 50, 180, 200), new Trapezoid(180, 200, 250, 260)
 glucoPost.push(new Trapezoid(0, 50, 140, 150), new Trapezoid(140, 150, 200, 210), new Trapezoid(200, 210, 400, 500));
 hemoGli.push(new Trapezoid(-10, 0, 5.5, 5.6), new Trapezoid(5.5, 5.6, 6, 6.4), new Trapezoid(6, 6.4, 8.5, 10));
 peso.push(new Trapezoid(-10, 0, 25, 30), new Trapezoid(25, 30, 45, 50), new Trapezoid(45, 50, 80, 100));
-
-//Con este objeto se procesaran las reglas del sistema difuso y sobre el mismo se guardaran los valores difusos
-// let object = {
-
-//     "glucoPreNormal": "Normal",
-//     "glucoPrePrediabetes": "Prediabetes",
-//     "glucoPreDiabetes": "Diabetes",
-//     "glucoCapiNormal": "Normal",
-//     "glucoCapiPrediabetes": "Prediabetes",
-//     "glucoCapiDiabetes": "Diabetes",
-//     "glucoPostNormal": "Normal",
-//     "glucoPostPrediabetes": "Prediabetes",
-//     "glucoPostDiabetes": "Diabetes",
-//     "hemoGliNormal": "Normal",
-//     "hemoGliPrediabetes": "Prediabetes",
-//     "hemoGliDiabetes": "Diabetes",
-//     "pesoNormal": "Normal",
-//     "pesoPrediabetes": "Prediabetes",
-//     "pesoDiabetes": "Diabetes",
-//     "preNormal": valoresPre[0],
-//     "prePrediabetes": valoresPre[1],
-//     "preDiabetes": valoresPre[2],
-//     "capiNormal": valoresCapi[0],
-//     "capiPrediabetes": valoresCapi[1],
-//     "capiDiabetes": valoresCapi[2],
-//     "postNormal": valoresPost[0],
-//     "postPrediabetes": valoresPost[1],
-//     "postDiabetes": valoresPost[2],
-//     "gliNormal": valoresHemo[0],
-//     "gliPrediabetes": valoresHemo[1],
-//     "gliDiabetes": valoresHemo[2],
-//     "pNormal": valorPeso[0],
-//     "pPrediabetes": valorPeso[1],
-//     "pDiabetes": valorPeso[2]
-// }
 
 let object = {
     Normal: 0,
@@ -422,16 +379,6 @@ var flow = nools.flow("DiagnosisFuzzy", function (flow) {
 
 var session = flow.getSession();
 
-// let example = {
-//     preprandial_glucose: 300,
-//     capillar_glucose: 250,
-//     postprandial_glucose: 400,
-//     glycosylated_hemoglobin: 4.5,
-//     peso: 36,
-// }
-
-// execute(session, example);
-
 function execute(session, objecto, result, res) {
 
     let values = convert(objecto);
@@ -442,8 +389,6 @@ function execute(session, objecto, result, res) {
 
     session.match().then(
         function () {
-            //all done!
-            console.log("All done!");
             let valor = centroide(object);
             //Se hace el metodo del centroide para hallar la salida del sistema difuso
             result["Valor del sistema difuso"] = valor;
@@ -458,14 +403,8 @@ function execute(session, objecto, result, res) {
                 Diagnostico = "Diabetes";
             }
             result["Diagnostico de SD"] = Diagnostico;
-            console.log(valor);
-            console.log(object);
-            console.log(values);
-            console.log(Diagnostico);
-            console.log(activadas);
             session.dispose();
             session = flow.getSession();
-            //res.redirect('/api/diagnosis/results');
             res.status(200).json(result);
             activadas = [];
             object.Normal = 0;
