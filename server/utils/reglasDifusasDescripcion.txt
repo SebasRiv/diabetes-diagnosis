@@ -1,0 +1,971 @@
+R1:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: "La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles normales, la Hemoglobina Glicosilada se encuentra entre los niveles normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra entre los niveles Normales."
+
+R2:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles normales, la Hemoglobina Glicosilada se encuentra entre los niveles normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra entre los niveles riesgosos de Pre Diabetes.
+
+R3:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles normales, la Hemoglobina Glicosilada se encuentra entre los niveles normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra entre los niveles peligrosos de Diabetes.
+
+R4:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles normales, la Hemoglobina Glicosilada se encuentra en un nivel riesgoso de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R5:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en un nivel riesgoso de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R6:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles normales, la Hemoglobina Glicosilada se encuentra en un nivel riesgoso de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R7:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles normales, la Hemoglobina Glicosilada se encuentra en un nivel peligroso de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R8:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles normales, la Hemoglobina Glicosilada se encuentra en un nivel peligroso de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R9:	GEA = "normal" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en un nivel peligroso de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R10:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R11:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R12:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R13:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R14:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R15:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R16:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R17:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R18:	GEA = "normal" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R19:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R20:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R21:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R22:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R23:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R24:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R25:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R26:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R27:	GEA = "normal" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R28:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R29:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R30:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R31:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R32:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R33:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R34:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R35:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R36:	GEA = "normal" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R37:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R38:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R39:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R40:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R41:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R42:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R43:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R44:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R45:	GEA = "normal" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R46:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R47:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R48:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R49:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R50:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R51:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R52:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R53:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R54:	GEA = "normal" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R55:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R56:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R57:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R58:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R59:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R60:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R61:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R62:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R63:	GEA = "normal" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R64:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R65:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R66:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R67:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R68:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R69:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R70:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R71:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R72:	GEA = "normal" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R73:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R74:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R75:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R76:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R77:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R78:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R79:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R80:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R81:	GEA = "normal" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles Normales, la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R82:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R83:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R84:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R85:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R86:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R87:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R88:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R89:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R90:	GEA = "prediabetes" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R91:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R92:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R93:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R94:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R95:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R96:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R97:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de  Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R98:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de  Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R99:	GEA = "prediabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de  Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R100:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R101:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R102:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R103:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R104:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R105:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R106:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R107:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R108:	GEA = "prediabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R109:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R110:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R111:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R112:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R113:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R114:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R115:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R116:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R117:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R118:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R119:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R120:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R121:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R122:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R123:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R124:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R125:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R126:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R127:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R128:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R129:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R130:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R131:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R132:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Diabetes.
+
+R133:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R134:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R135:	GEA = "prediabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de  Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R136:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R137:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R138:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R139:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R140:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R141:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R142:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R143:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R144:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R145:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R146:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R147:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R148:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R149:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R150:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R151:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R152:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R153:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R154:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R155:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R156:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R157:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R158:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R159:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R160:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R161:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R162:	GEA = "prediabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles riesgosos de Pre Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R163:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Normal"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R164:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R165:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R166:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R167:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R168:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R169:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R170:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R171:	GEA = "diabetes" && GLU = "normal" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R172:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R173:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R174:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R175:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R176:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R177:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R178:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R179:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R180:	GEA = "diabetes" && GLU = "normal" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R181:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R182:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R183:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R184:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R185:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R186:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R187:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R188:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R189:	GEA = "diabetes" && GLU = "normal" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles Normales, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R190:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R191:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R192:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R193:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R194:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R195:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R196:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R197:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R198:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R199:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R200:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R201:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R202:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R203:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R204:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R205:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R206:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R207:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R208:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R209:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R210:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R211:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R212:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R213:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R214:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R215:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R216:	GEA = "diabetes" && GLU = "prediabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles riesgosos de Pre Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R217:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R218:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R219:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R220:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R221:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R222:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R223:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R224:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R225:	GEA = "diabetes" && GLU = "diabetes" && GPO = "normal" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles Normales, la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R226:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R227:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R228:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Diabetes.
+
+R229:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R230:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R231:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R232:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R233:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R234:	GEA = "diabetes" && GLU = "diabetes" && GPO = "prediabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles riesgosos de Pre Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R235:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "normal" -> Diagnostico = "Propenso"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R236:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R237:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "normal" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles Normales y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R238:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R239:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "prediabetes" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R240:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "prediabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles riesgosos de Pre Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.
+
+R241:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "normal" -> Diagnostico = "Pre Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles Normales.
+
+R242:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "prediabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles riesgosos de Pre Diabetes.
+
+R243:	GEA = "diabetes" && GLU = "diabetes" && GPO = "diabetes" && HGL = "diabetes" && PESO = "diabetes" -> Diagnostico = "Diabetes"
+
+descripcion: La Glucemia en Ayunas o Glucemia Prepandial se encuentra entre los niveles peligrosos de Diabetes (Sin ingesta de alimentos en el inicio del día), la Glucemia Capilar se encuentra en los niveles peligrosos de Diabetes, La Glucemia Posprandial se encuentra en entre los niveles peligrosos de Diabetes (como posible causa algún alimento recientemente ingerido – pero es de cuidado por desórdenes metabólicos), la Hemoglobina Glicosilada se encuentra en los niveles peligrosos de Diabetes y el Peso, como resultado de salida para las variables representantes del estilo de vida del paciente conmutadas además de otras relacionadas con exámenes más elaborados se encuentra en los niveles peligrosos de Diabetes.

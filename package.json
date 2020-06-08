@@ -11,9 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mathjs": "^6.6.1",
-    "nools": "^0.4.4"
+    "mongoose": "^5.9.16",
+    "nools": "^0.4.4",
+    "puppeteer": "^3.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

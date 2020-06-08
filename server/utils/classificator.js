@@ -18,76 +18,45 @@ function getData(path) {
 }
 
 function classification(object) {
-
-    // El el parametro object es el que trae la información del sistema de captura
+    // El el parametro object es el que trae la 
+    // información del sistema de captura
     // y despues se separan booleanas (o binomiales) y numericas
-
-    let numVars = [];
-    let boolVars = {};
-    let data = [];
-    let aceptedVariables = {};
-    let i = 0;
-
-    // Se guarda el nombre de la variable numerica y su valor en el arreglo
+    let numVars = [];let boolVars = {};let data = [];
+    let aceptedVariables = {};let i = 0;
+    // Se guarda el nombre de la variable numerica 
+    // y su valor en el arreglo
     for (const iterator of numVariables) {
-        const val = {
-            variable: iterator,
-            value: object[iterator]
-        }
-        numVars.push(val);
-    }
-
+        const val = {variable: iterator,value: object[iterator]};
+        numVars.push(val);}
     // Se guarda el nombre de la variable binomial y su valor
     for (const iterator of boolVariables) {
-        boolVars[iterator] = object[iterator];
-    }
-
+        boolVars[iterator] = object[iterator];}
     // Despues de separar las variables se obitene la data de c/u
     for (const iterator of variablePathData) {
-        data.push(getData(iterator.path));
-    }
-
-    // Se procede a clasificar las numericas primeramente ¡IMPORTANTE EL ORDEN DE LAS VARIABLES!
+        data.push(getData(iterator.path));}
+    // Se procede a clasificar las numericas primeramente 
+    //¡IMPORTANTE EL ORDEN DE LAS VARIABLES!
     for (const iterator of numVars) {
-        const result = clasificationNum(categoriesNum(data[i]), iterator.value);
+        const result = clasificationNum(categoriesNum(data[i]),
+        iterator.value);
         if (result[0] > result[1]) {
-            aceptedVariables[iterator.variable] = iterator.value;
-        }
-        i++;
-    }
-
+            aceptedVariables[iterator.variable] = iterator.value;}
+            i++;}
     // Se clasifican las binomiales
     const booldata = clasificationBool(boolVars, datosBool);
-
     if (booldata[0] > booldata[1]) {
         for (const iterator of boolVariables) {
             if (object[iterator] === 1) {
-                aceptedVariables[iterator] = object[iterator];
-            }
-        }
-    }
-
+                aceptedVariables[iterator] = object[iterator];}}}
     console.log(aceptedVariables);
-
-    return aceptedVariables;
-}
+    return aceptedVariables;}
 
 function featureQuantifies(feature, data) {
-
-    let quantifyPositive = 0;
-    let quantifyNegative = 0;
-
+    let quantifyPositive = 0;let quantifyNegative = 0;
     for (const iterator of data) {
-
-        if (iterator[feature] === 1 && iterator.diabetes === 1) {
-            quantifyPositive++;
-        } else if (iterator[feature] === 1 && iterator.diabetes === 0) {
-            quantifyNegative++;
-        }
-    }
-
-    return [quantifyPositive, quantifyNegative];
-}
+        if (iterator[feature] === 1 && iterator.diabetes === 1) {quantifyPositive++;} 
+        else if (iterator[feature] === 1 && iterator.diabetes === 0) {quantifyNegative++;}}
+    return [quantifyPositive, quantifyNegative];}
 
 //Para  las variables binomiales
 function categoriesBool(data) {
