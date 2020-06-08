@@ -368,9 +368,9 @@ diagnosisCtrl.download = async (req, res) => {
         var data = fs.readFileSync(__dirname + `/../uploads/${nombreArchivo}`);
         res.contentType("application/pdf");
         res.send(data);
-    }).then(() => {
+    })/* .then(() => {
         fs.unlinkSync(__dirname + `/../uploads/${nombreArchivo}`);
-    }).catch(err => {
+    }) */.catch(err => {
         res.send(err);
     });
 }
