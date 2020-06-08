@@ -1,7 +1,11 @@
 
-const url = "http://localhost:4000/api/diagnosis";
-const url2 = "https://pokeapi.co/api/v2/pokemon/ditto";
-const url3 = "http://localhost:4000/api/diagnosis/results";
+// Path para desarrollo
+// const url = "http://localhost:4000/api/diagnosis";
+// const url3 = "http://localhost:4000/api/diagnosis/results";
+
+//Path para produccion
+const url = "https://diagnosis-protoype.herokuapp.com/api/diagnosis";
+const url3 = "https://diagnosis-protoype.herokuapp.com/api/diagnosis/results";
 
 const button = document.getElementById('boton');
 const form = document.getElementById('form');
@@ -74,7 +78,7 @@ function sendInformation() {
     variablesDifuso.push({variable: "Glucosa postpandial", valor: valorPost, tipo: "Numerica", estado: etiquetaPos});
     variablesDifuso.push({variable: "Hemoglobina Glicosilada", valor: valorHem, tipo: "Numerica", estado: etiquetaHem});
 
-    console.log(variablesDifuso);
+    // console.log(variablesDifuso);
 
     for (let i = 0; i < elementosNumericos.length; i++) {
         objeto[elementosNumericos[i].id] = elementosNumericos[i].value;
@@ -84,8 +88,8 @@ function sendInformation() {
         objeto[elementosBinomiales[i].id] = elementosBinomiales[i].value;
     }
 
-    console.log(objeto);
-    console.log(JSON.stringify(objeto));
+    // console.log(objeto);
+    // console.log(JSON.stringify(objeto));
 
     fetch(url, {
         method: 'POST',
@@ -96,7 +100,7 @@ function sendInformation() {
     })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             localStorage.setItem("resultados", JSON.stringify(data));
             localStorage.setItem("variablesDifuso", JSON.stringify(variablesDifuso));
             localStorage.setItem("usuario", JSON.stringify({nombre: nombre.value, documento: documento.value}));

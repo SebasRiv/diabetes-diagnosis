@@ -1,4 +1,8 @@
-const url = "http://localhost:4000/api/diagnosis/results";
+// Path para cuando se trabaje local
+// const url = "http://localhost:4000/api/diagnosis/results";
+
+// Path para trabajar en produccion
+const url = "https://diagnosis-protoype.herokuapp.com/api/diagnosis/results";
 
 const lista = document.getElementById('lista');
 const volver = document.getElementById('volver');
@@ -17,12 +21,6 @@ fetch(url, {
         console.log(data);
 
         datos = data;
-
-        // for (const boton of botones) {
-        //     boton.addEventListener('click', (e) => {
-        //         console.log('pija por el culo');
-        //     });
-        // }
         let index = 0;
 
         console.log(datos);

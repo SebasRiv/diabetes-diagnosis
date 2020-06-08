@@ -6,8 +6,13 @@ const variablesClasificadas = resultados["variables seleccionadas"];
 const reglasSE = resultados["reglas activadas SE"];
 const reglasDifuso = resultados["Reglas activadas SD"];
 
-const ruta = "http://localhost:4000/api/diagnosis/results";
-const ruta2 = "http://localhost:4000/api/diagnosis/download";
+// // Rutas para desarrollo
+// const ruta = "http://localhost:4000/api/diagnosis/results";
+// const ruta2 = "http://localhost:4000/api/diagnosis/download";
+
+// Rutas para produccion
+const ruta = "https://diagnosis-protoype.herokuapp.com/api/diagnosis/results";
+const ruta2 = "https://diagnosis-protoype.herokuapp.com/api/diagnosis/download";
 
 const tablaClasificador = document.getElementById('tablaClasificador');
 const tablaReglasSE = document.getElementById('tablaReglasSE');
@@ -193,7 +198,7 @@ function saveInformation() {
     })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            // console.log(data);
             alert('Se ha guardadod el diagnostico correctamente');
             window.location = "index.html";
             // Swal.fire({
@@ -388,6 +393,6 @@ salidaDifuso.innerHTML = resultados["Valor del sistema difuso"];
 etiquetaDifuso.innerHTML = resultados["Diagnostico de SD"];
 diagnostico.innerHTML = resultados["Diagnostico de SD"];
 
-console.log(variablesDifuso);
-console.log(resultados);
-console.log(tablaClasificador);
+// console.log(variablesDifuso);
+// console.log(resultados);
+// console.log(tablaClasificador);
