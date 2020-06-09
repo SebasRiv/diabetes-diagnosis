@@ -200,7 +200,7 @@ function saveInformation() {
         .then(res => res.json())
         .then(data => {
             // console.log(data);
-            alert('Se ha guardadod el diagnostico correctamente');
+            alert('Se ha guardado el diagnostico correctamente');
             window.location = "index.html";
             // Swal.fire({
             //     type: 'success',
