@@ -139,43 +139,45 @@ fetch(url, {
 
             });
         }
-        const puglin1 = document.createElement('script');
-        const puglin2 = document.createElement('script');
-        const puglin3 = document.createElement('script');
-        const puglin4 = document.createElement('script');
+        const pluglin1 = document.createElement('script');
+        const pluglin2 = document.createElement('script');
+        const pluglin3 = document.createElement('script');
+        const pluglin4 = document.createElement('script');
         const dataTable1 = document.createElement('script');
         const dataTable2 = document.createElement('script');
         const dataTable3 = document.createElement('script');
         const dataTable4 = document.createElement('script');
         const plantilla = document.createElement('script');
 
-        puglin1.type = 'text/javascript';
-        puglin2.type = 'text/javascript';
-        puglin3.type = 'text/javascript';
-        puglin4.type = 'text/javascript';
+        pluglin1.type = 'text/javascript';
+        pluglin2.type = 'text/javascript';
+        pluglin3.type = 'text/javascript';
+        pluglin4.type = 'text/javascript';
         plantilla.type = 'text/javascript';
 
-        puglin1.src = "plugins/datatables/datatables.js";
-        puglin2.src = "plugins/datatables/datatables.min.js";
-        puglin3.src = "plugins/datatables/DataTables-1.10.21/js/dataTables.bootstrap4.js";
-        puglin4.src = "plugins/datatables/DataTables-1.10.21/js/dataTables.bootstrap4.min.js";
+        pluglin1.src = "plugins/datatables/datatables.js";
+        pluglin2.src = "plugins/datatables/datatables.min.js";
+        pluglin3.src = "plugins/datatables/DataTables-1.10.21/js/dataTables.bootstrap4.js";
+        pluglin4.src = "plugins/datatables/DataTables-1.10.21/js/dataTables.bootstrap4.min.js";
 
         dataTable1.src = "js/jquery.dataTables.min.js";
         dataTable2.src = "js/dataTables.bootstrap4.min.js";
         dataTable3.src = "js/dataTables.responsive.min.js";
         dataTable4.src = "js/responsive.bootstrap.min.js";
-        plantilla.src = "s/plantilla.js";
+        plantilla.src = "js/plantilla.js";
 
         const body = document.querySelector('body');
 
-        body.appendChild(puglin1);
-        body.appendChild(puglin2);
-        body.appendChild(puglin3);
-        body.appendChild(puglin4);
+        body.appendChild(pluglin1);
+        body.appendChild(pluglin2);
+        body.appendChild(pluglin3);
+        body.appendChild(pluglin4);
         body.appendChild(dataTable1);
         body.appendChild(dataTable2);
         body.appendChild(dataTable3);
         body.appendChild(dataTable4);
         body.appendChild(plantilla);
+
+        pluglin1.onlo
     });
 
