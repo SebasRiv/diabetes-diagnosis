@@ -178,5 +178,7 @@ fetch(url, {
         body.appendChild(dataTable3);
         body.appendChild(dataTable4);
         body.appendChild(plantilla);
+
+        window.location.reload();
     });
 
