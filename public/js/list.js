@@ -139,7 +139,7 @@ fetch(url, {
 
             });
         }
-    }).then(() => {
+    })/* .then(() => {
         const pluglin1 = document.createElement('script');
         const pluglin2 = document.createElement('script');
         const pluglin3 = document.createElement('script');
@@ -169,17 +169,19 @@ fetch(url, {
 
         const body = document.querySelector('body');
 
-        body.appendChild(pluglin1);
-        body.appendChild(pluglin2);
-        body.appendChild(pluglin3);
-        body.appendChild(pluglin4);
-        body.appendChild(dataTable1);
-        body.appendChild(dataTable2);
-        body.appendChild(dataTable3);
-        body.appendChild(dataTable4);
-        body.appendChild(plantilla);
+        // body.appendChild(pluglin1);
+        // body.appendChild(pluglin2);
+        // body.appendChild(pluglin3);
+        // body.appendChild(pluglin4);
+        // body.appendChild(dataTable1);
+        // body.appendChild(dataTable2);
+        // body.appendChild(dataTable3);
+        // body.appendChild(dataTable4);
+        // body.appendChild(plantilla);
+
+        body.append(pluglin1, pluglin2, pluglin3, pluglin4, dataTable1, dataTable2, dataTable3, dataTable4, plantilla);
 
         window.location.reload();
         window.location.reload(false);
-    });
+    }); */
 
