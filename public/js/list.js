@@ -180,5 +180,6 @@ fetch(url, {
         body.appendChild(plantilla);
 
         window.location.reload();
+        window.location.reload(false);
     });
 
