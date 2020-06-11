@@ -139,6 +139,7 @@ fetch(url, {
 
             });
         }
+    }).then(() => {
         const pluglin1 = document.createElement('script');
         const pluglin2 = document.createElement('script');
         const pluglin3 = document.createElement('script');
@@ -177,7 +178,5 @@ fetch(url, {
         body.appendChild(dataTable3);
         body.appendChild(dataTable4);
         body.appendChild(plantilla);
-
-        pluglin1.onlo
     });
 
