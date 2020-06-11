@@ -250,8 +250,26 @@ function execute(session, res, values, variables) {
     });
 }
 
+function testExecute(session) {
+
+    let result = 0;
+
+    session.match().then(function (resolve) {
+        resolve(result = totalWeight);
+        console.log(totalWeight);
+        session.dispose();
+        session = flow.getSession();
+    },
+    function (err) {
+        console.log("Error matchUntilHalt()", err.stack);
+    });
+        
+    return result;
+}
+
 module.exports = {
     flow,
     Diagnosis,
-    execute
+    execute,
+    testExecute
 };

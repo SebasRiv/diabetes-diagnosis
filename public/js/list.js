@@ -13,6 +13,9 @@ volver.addEventListener('click', (e) => {
 
 let datos;
 
+document.createElement('script')
+
+
 fetch(url, {
     method: 'GET'
 })
@@ -135,7 +138,44 @@ fetch(url, {
                 }, 1000);
 
             });
+            const puglin1 = document.createElement('script');
+            const puglin2 = document.createElement('script');
+            const puglin3 = document.createElement('script');
+            const puglin4 = document.createElement('script');
+            const dataTable1 = document.createElement('script');
+            const dataTable2 = document.createElement('script');
+            const dataTable3 = document.createElement('script');
+            const dataTable4 = document.createElement('script');
+            const plantilla = document.createElement('script');
+
+            puglin1.type = 'text/javascript';
+            puglin2.type = 'text/javascript';
+            puglin3.type = 'text/javascript';
+            puglin4.type = 'text/javascript';
+            plantilla.type = 'text/javascript';
+
+            puglin1.src = "plugins/datatables/datatables.js";
+            puglin2.src = "plugins/datatables/datatables.min.js";
+            puglin3.src = "plugins/datatables/DataTables-1.10.21/js/dataTables.bootstrap4.js";
+            puglin4.src = "plugins/datatables/DataTables-1.10.21/js/dataTables.bootstrap4.min.js";
+
+            dataTable1.src = "js/jquery.dataTables.min.js";
+            dataTable2.src = "js/dataTables.bootstrap4.min.js";
+            dataTable3.src = "js/dataTables.responsive.min.js";
+            dataTable4.src = "js/responsive.bootstrap.min.js";
+            plantilla.src = "s/plantilla.js";
+  
+            const body = document.querySelector('body');
+
+            body.appendChild(puglin1);
+            body.appendChild(puglin2);
+            body.appendChild(puglin3);
+            body.appendChild(puglin4);
+            body.appendChild(dataTable1);
+            body.appendChild(dataTable2);
+            body.appendChild(dataTable3);
+            body.appendChild(dataTable4);
+            body.appendChild(plantilla);
         }
-        const botones = document.querySelectorAll('button');
-        console.log(botones);
-    })
+    });
+

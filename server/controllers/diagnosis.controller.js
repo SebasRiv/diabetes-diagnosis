@@ -5,13 +5,13 @@ const Diagnostico = require('../models/diagnosis');
 
 const diagnosisCtrl = {};
 
-const classicator = require('../utils/classificator');
+const { classification: classicator } = require('../utils/classificator');
 const { flow, Diagnosis, execute } = require('../utils/expertSystem');
 const { numVariables, boolVariables } = require('../utils/utilities');
 
 diagnosisCtrl.getDiagnostics = (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.send("All right!");
+    res.json("All right!");
 }
 
 diagnosisCtrl.postDiagnosis = (req, res) => {
@@ -86,14 +86,14 @@ diagnosisCtrl.postDiagnosis = (req, res) => {
     session.assert(Diagnostico);
     const promise = new Promise((resolve, reject) => {
 
-        console.log(execute(session, res, fuzzyVariables, activated));
+        execute(session, res, fuzzyVariables, activated);
         resolve("Mostrando resultados");
 
     });
 
-    promise.then((resp) => {
-        console.log(resp);
-    });
+    // promise.then((resp) => {
+    //     cnsole.log(resp);o
+    // });
 }
 
 diagnosisCtrl.getResults = async (req, res) => {

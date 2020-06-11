@@ -48,7 +48,7 @@ function classification(object) {
         for (const iterator of boolVariables) {
             if (object[iterator] === 1) {
                 aceptedVariables[iterator] = object[iterator];}}}
-    console.log(aceptedVariables);
+    // console.log(aceptedVariables);
     return aceptedVariables;}
 
 function featureQuantifies(feature, data) {
@@ -244,5 +244,14 @@ let dato = 90;
 
 // console.log(datos3[0].value);
 
-module.exports = classification;
+module.exports = {
+    classification,
+    getData,
+    featureQuantifies,
+    datosBool,
+    categoriesNum,
+    clasificationNum,
+    clasificationBool,
+    normDist
+};
 
