@@ -52,7 +52,7 @@ function nombreVar(variable) {
             nombre = "N° de embarazos";
             break;
         case "preprandial_glucose":
-            nombre = "Glucosa Prepandial";
+            nombre = "Glucosa Preprandial";
             break;
         case "diastolic_blood_pressure":
             nombre = "Presión sanguinea diastolica";
@@ -242,6 +242,7 @@ for (let i = 0; i < variablesClasificadas.length; i++) {
     numero.innerHTML = i + 1;
     const h5 = document.createElement('h5');
     h5.appendChild(nombreVariable);
+    h5.style = "text-align: center;  padding-top: 4%;";
     const nombre = document.createElement('td').appendChild(h5);
     const distribucion = document.createElement('td');
     distribucion.innerHTML = distribucionVar(variablesClasificadas[i].variable);
@@ -277,6 +278,7 @@ for (let i = 0; i < reglasSE.length; i++) {
 
     const variableH5 = document.createElement('h5');
     variableH5.appendChild(nombreVariable);
+    variableH5.style = "text-align: center;  padding-top: 4%;";
 
     const regla = document.createElement('td').appendChild(reglaH5);
     const variable = document.createElement('td').appendChild(variableH5);
@@ -308,7 +310,9 @@ for (let i = 0; i < reglasSE.length; i++) {
 
     renglonRegla.appendChild(numeroRegla);
     renglonRegla.appendChild(regla);
+    regla.style = "text-align: center;  padding-top: 4%;";
     renglonRegla.appendChild(descripcion);
+    descripcion.style = "text-align: center;";
 
     rengloVariable.appendChild(numeroVariable);
     rengloVariable.appendChild(variable);
@@ -382,6 +386,8 @@ for (let i = 0; i < variablesDifuso.length; i++) {
     rengloVariable.appendChild(valor);
     rengloVariable.appendChild(tipo);
     rengloVariable.appendChild(estado);
+    estado.style = "text-align: center;  margin-top: 6%; margin-bottom: 6%";
+    rengloVariable.style = "text-align: center;";
 
     vairablesDif.appendChild(rengloVariable);
 }
@@ -404,8 +410,12 @@ for (let i = 0; i < reglasDifuso.length; i++) {
     descripcion.innerHTML = reglasDifuso[i].descripcion;
 
     renglon.appendChild(numero);
+
     renglon.appendChild(regla);
+    renglon.style = "width: 2%;"
+    regla.style = "margin: 6%; text-align: center;";
     renglon.appendChild(descripcion);
+    descripcion.style = "width: 80%;"
 
     tablaReglasDifuso.appendChild(renglon);
 }

@@ -120,6 +120,8 @@ diagnosisCtrl.download = async (req, res) => {
 
     const fecha = new Date();
 
+    const variablesBool = ['¿Ejercicio Físico?', '¿Vida sedentaria?', '¿Fuma?', '¿Consume alcohol?', '¿Aliementos grasos?', '¿Visión borrosa?', '¿Fatiga?', '¿Dolor y entumecimiento en manos y pies?', '¿Cicatrización lenta?', '¿Consume farmacos?'];
+
     let nombreArchivo = `${usuario.nombre}-${usuario.documento}-${fecha.getFullYear()}-${fecha.getMonth()}-${fecha.getDate()}-${fecha.getMilliseconds()}.pdf`
 
     const path = __dirname + `/../uploads/${nombreArchivo}`;
@@ -234,7 +236,7 @@ diagnosisCtrl.download = async (req, res) => {
                                                             ${resultados["reglas activadas SE"].map((item, i) => `
                                                                 <tr>
                                                                     <td>${item.variable}</td>
-                                                                    <td>${item.valor}</td>
+                                                                    <td>${item.variable === "¿Ejercicio Físico?" ? "No" : variablesBool.includes(item.variable) ? "Si" : item.valor}</td>
                                                                     <td>${item.etiqueta}</td>
                                                                     <td>${item.descripcion}</td>
                                                                 </tr>               

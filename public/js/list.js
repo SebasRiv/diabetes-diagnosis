@@ -21,12 +21,12 @@ fetch(url, {
 })
     .then(res => res.json())
     .then(data => {
-        console.log(data);
+        // console.log(data);
 
         datos = data;
         let index = 0;
 
-        console.log(datos);
+        // console.log(datos);
 
         for (const dato of datos) {
 
@@ -72,7 +72,7 @@ fetch(url, {
             button.addEventListener('click', (e) => {
                 const numero = Number(e.srcElement.parentElement.parentElement.children[0].innerHTML);
                 const diagnostico = data[numero - 1];
-                console.log(diagnostico);
+                // console.log(diagnostico);
 
                 const variablesDifuso = [];
 
@@ -122,12 +122,12 @@ fetch(url, {
                 variablesDifuso.push({ variable: "Glucosa capilar", valor: valorCap, tipo: "Numerica", estado: etiquetaCap });
                 variablesDifuso.push({ variable: "Glucosa postpandial", valor: valorPost, tipo: "Numerica", estado: etiquetaPos });
                 variablesDifuso.push({ variable: "Hemoglobina Glicosilada", valor: valorHem, tipo: "Numerica", estado: etiquetaHem });
-                console.log(variablesDifuso);
+                // console.log(variablesDifuso);
 
                 const usuario = { nombre: diagnostico.username, documento: diagnostico.document };
-                console.log(usuario);
+                // console.log(usuario);
 
-                console.log(diagnostico.diagnosis);
+                // console.log(diagnostico.diagnosis);
 
                 localStorage.setItem("resultados", JSON.stringify(diagnostico.diagnosis));
                 localStorage.setItem("variablesDifuso", JSON.stringify(variablesDifuso));

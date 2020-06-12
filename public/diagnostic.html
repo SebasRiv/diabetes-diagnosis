@@ -6,10 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Diagnóstico DM2</title>
 	<link rel="icon" href="img/cerebrito.png">
-	
-	<!-- Font Awesome - Liberia Iconos FontAwsome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
-
 </head>
 <body>
 
@@ -88,7 +85,7 @@
 
 									<h2>
 
-										<div class='alert alert-success mt-3 small' align="center"><b><i class="fas fa-brain"></i>  <img src="img/imagenLogo.png" width="40px" height="40px" align="left">DIAGNÓSTICO DE DM2 USANDO UN CLASIFICADOR BAYESIANO Y SISTEMAS INTELIGENTES  <i class="fas fa-brain"></i></b><img src="img/imagenLogo.png" width="40px" height="40px" align="right"></div>
+										<div class='alert alert-success mt-3 small' align="center"><b><i class="fas fa-brain"></i>  <img src="img/imagenLogo.png" width="40px" height="40px" align="left"> PROTOTIPO DE DIAGNOSTICO DIABETES <i class="fas fa-brain"></i></b><img src="img/imagenLogo.png" width="40px" height="40px" align="right"></div>
 
 									</h2>
 
@@ -109,7 +106,7 @@
 										<div class="col-sm-12">
 
 											<h5>
-												<div class='alert alert-primary' align="center"><b><i class="fas fa-brain"></i><font id="usuarioData">El paciente actualmente padece</font> <b><font id="diagnostico" color="red">Pre Diabetes</font></b> en lo que respecta Diabetes Mellitus Tipo 2 <i class="fas fa-brain"></i></b></div>
+												<div class='alert alert-primary' align="center"><b><font id="usuarioData">El paciente actualmente padece</font> <b><font id="diagnostico" color="red">Pre Diabetes</font></b> en lo que respecta Diabetes Mellitus Tipo 2 </b></div>
 											</h5>
 
 										</div>
@@ -119,7 +116,7 @@
 										<div class="col-sm-12">
 
 											<h5>
-												<div class='alert alert-warning' align="center"><b><i class="fas fa-brain"></i> DETALLE DE DIAGNÓSTICO - EXPLICACIÓN PARA SE Y SD <i class="fas fa-brain"></i></b></div>
+												<div class='alert alert-warning' align="center"><b> DETALLE DE DIAGNÓSTICO - EXPLICACIÓN PARA SE Y SD </b></div>
 											</h5>
 
 										</div>
@@ -153,15 +150,6 @@
 
 													<tbody id="tablaClasificador">
 													</tbody>
-
-													<tfoot class="thead-dark"> 
-
-														<th style="width:10px">#</th>
-														<th style="width:100px">Variable Clasificada</th>
-														<th>Distribución</th>
-														<th>Valor</th>
-
-													</tfoot>
 
 												</table>
 
@@ -201,17 +189,6 @@
 													<tbody id="variablesSE">
 													</tbody>
 
-													<tfoot class="thead-dark"> 
-
-														<th style="width:10px">#</th>
-														<th style="width:260px">Variable Clasificada</th>
-														<th>Tipo de Variable</th>
-														<th>Valor de Variable</th>
-														<th>Estado</th>
-														<th>Peso</th>
-
-													</tfoot>
-
 												</table>
 
 											</div>
@@ -242,9 +219,9 @@
 
 														<tr>
 
-															<th style="width:10px">#</th>
-															<th style="width:260px">Regla</th>
-															<th>Descripción</th>
+															<th style="width:2%; text-align: center;">#</th>
+															<th style="width:18%; text-align: center;">Regla</th>
+															<th style="width: 80%; text-align: center;">Descripción</th>
 
 														</tr>
 
@@ -257,7 +234,7 @@
 
 														<th style="width:10px"></th>
 														<th style="width:260px"></th>
-														<th><p align="right">PESO FINAL GENERADO POR EL SISTEMA EXPERTO: <button type="button" class="btn btn-secondary"><b id="pesoSE">XXXXX</b></button></p></th>
+														<th><p align="center">PESO FINAL GENERADO POR EL SISTEMA EXPERTO: <button type="button" class="btn btn-secondary"><b id="pesoSE">XXXXX</b></button></p></th>
 
 													</tfoot>
 
@@ -303,7 +280,7 @@
 
 													<tbody id="variablesDifuso">
 													</tbody>
-
+<!-- 
 													<tfoot class="thead-dark"> 
 
 														<th style="width:10px">#</th>
@@ -312,7 +289,7 @@
 														<th style="width:260px">Tipo Variable</th>
 														<th>Estado</th>
 
-													</tfoot>
+													</tfoot> -->
 
 												</table>
 
@@ -373,7 +350,7 @@
 
 											<button id="guardar" type="button" class="btn btn-success"><i class="far fa-save"></i> Guardar Diagnóstico de DM2 y Finalizar <i class="far fa-save"></i></button>
 											<button id="descargar" type="button" class="btn btn-info"><i class="far fa-file-pdf"></i> Descargar versión usuario <i class="far fa-file-pdf"></i></button>
-											<button id="volver" type="button" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Volver al menu principal <i class="fas fa-arrow-left"></i></button>
+											<button id="volver" type="button" class="btn btn-secondary">Volver al menu principal</button>
 
 										</div>
 
