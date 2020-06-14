@@ -21,7 +21,62 @@ volver.addEventListener('click', (e) => {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    sendInformation();
+    const botones = document.querySelectorAll('button');
+
+    const embarazos = Number(document.getElementById('embarazos').value);
+    const gluAyunas = Number(document.getElementById('gluAyunas').value);
+    const preSangDias = Number(document.getElementById('preSangDias').value);
+    const esPliegCutTri = Number(document.getElementById('esPliegCutTri').value);
+    const ins = Number(document.getElementById('ins').value);
+    const imc = Number(document.getElementById('imc').value);
+    const funcPediDiab = Number(document.getElementById('funcPediDiab').value);
+    const edadAnos = Number(document.getElementById('edadAnos').value);
+    const nivelEst = Number(document.getElementById('nivelEst').value);
+    const colesterol = Number(document.getElementById('colesterol').value);
+    const trigliceridos = Number(document.getElementById('trigliceridos').value);
+    const glucemiaCap = Number(document.getElementById('glucemiaCap').value);
+    const glucemiaPosp = Number(document.getElementById('glucemiaPosp').value);
+    const hemoGlic = Number(document.getElementById('hemoGlic').value);
+
+    // Validación de los campos del formulario
+    if (embarazos < 0 || embarazos > 20) {
+        alert('Valor o valores invalidos');
+    } else if(gluAyunas < 50 || gluAyunas > 450) {
+        alert('Valor o valores invalidos');
+    } else if(preSangDias < 30 || preSangDias > 250) {
+        alert('Valor o valores invalidos');
+    } else if(esPliegCutTri < 0 || esPliegCutTri > 100) {
+        alert('Valor o valores invalidos');
+    } else if(ins < 0 || ins > 1000) {
+        alert('Valor o valores invalidos');
+    } else if(imc < 0 || imc > 100) {
+        alert('Valor o valores invalidos');
+    } else if(funcPediDiab < 0 || funcPediDiab > 5) {
+        alert('Valor o valores invalidos');
+    } else if(edadAnos < 0 || edadAnos > 120) {
+        alert('Valor o valores invalidos');
+    } else if(nivelEst < 0 || nivelEst > 450) {
+        alert('Valor o valores invalidos');
+    } else if(colesterol < 0 || colesterol > 400) {
+        alert('Valor o valores invalidos');
+    } else if(trigliceridos < 0 || trigliceridos > 700) {
+        alert('Valor o valores invalidos');
+    } else if(glucemiaCap < 50 || glucemiaCap > 450) {
+        alert('Valor o valores invalidos');
+    } else if(glucemiaPosp < 50 || glucemiaPosp > 450) {
+        alert('Valor o valores invalidos');
+    } else if(hemoGlic < 0 || hemoGlic > 10) {
+        alert('Valor o valores invalidos');
+    } else {
+        const confirmacion = confirm('¿La información que ingreso es correcta?');
+
+        if (confirmacion) {
+            for (const iterator of botones) {
+                iterator.disabled = true;
+            }
+            sendInformation();           
+        }
+    }
 });
 
 function sendInformation() {
