@@ -221,13 +221,17 @@ function saveInformation() {
         .then(res => res.json())
         .then(data => {
             // console.log(data);
-            alert('Se ha guardado el diagnostico correctamente');
-            window.location = "index.html";
-            // Swal.fire({
-            //     type: 'success',
-            //     title: 'Mensaje',
-            //     text: 'Se ha guardado el diagnostico correctamente'
-            // });
+            swal({
+                type: "success",
+                title: "Completado",
+                text: "Se ha guardado el registro correctamente",
+                showConfirmButton: true,
+                confirmButtonText: "Aceptar"
+            }).then((result) => {
+                if (result.value) {
+                    window.location = "index.html";      
+                }
+            });
         });
 }
 
