@@ -94,7 +94,7 @@ function nombreVar(variable) {
             nombre = "Hemoglobina glicosilada";
             break;
         case "exercise":
-            nombre = "Ejercicio Fisico";
+            nombre = "No ejercicio Fisico";
             break;
         case "sedentary_life":
             nombre = "Vida sedentario";
