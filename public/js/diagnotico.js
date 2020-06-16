@@ -204,7 +204,7 @@ function descargar() {
             // link.click();
             setTimeout(function () {
                 // For Firefox it is necessary to delay revoking the ObjectURL
-                window.open(data);
+                window.open(data, "_self");
                 window.URL.revokeObjectURL(data);
             }, 100);
         });
@@ -247,7 +247,16 @@ for (let i = 0; i < variablesClasificadas.length; i++) {
     const distribucion = document.createElement('td');
     distribucion.innerHTML = distribucionVar(variablesClasificadas[i].variable);
     const valor = document.createElement('td');
-    valor.innerHTML = variablesClasificadas[i].value;
+    if (["No ejercicio Fisico", "Vida sedentario", "Fuma", "Alcohol", "Alimentos grasos", "Visión borrosa", "Fatiga", "Dolor-entumecimiento en pies y manos", "Cicatrización lenta", "Farmacos"].includes(nombreVar(variablesClasificadas[i].variable))) {
+        const span = document.createElement('span');
+        span.className += "badge badge-success";
+        span.innerHTML = "Verdadero";
+
+        const h5 = document.createElement('h5').appendChild(span);
+        valor.appendChild(h5);
+    } else {
+        valor.innerHTML = variablesClasificadas[i].value;
+    }
 
     renglon.appendChild(numero);
     renglon.appendChild(nombre);

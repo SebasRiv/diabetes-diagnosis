@@ -115,7 +115,7 @@
 
 												<label><b>Documento paciente:</b></label>
 
-												<input type="number" class="form-control" id="documento" name="documento" placeholder="Documento paciente ..." required="">
+												<input type="text" class="form-control" id="documento" name="documento" placeholder="Documento paciente ..." required="" onkeypress="return onlyNumbers(event)">
 
 											</div>
 
@@ -146,7 +146,7 @@
 												<label><b>Número de Embarazos:</b> (<b><font color ="green">NDE</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoNumeroEmbarazos" href="#" title="¿Dudas sobre Número de Embarazos?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="embarazos" name="embarazos" placeholder="Embarazos ..." required="" min="0" max="20">
+													<input type="text" class="form-control" id="embarazos" name="embarazos" placeholder="Embarazos..." required step="any" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de embarazos.
 													</div>
@@ -163,7 +163,7 @@
 												<label><b>Glucosa en Ayunas:</b> (<b><font color ="green">GEA</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoGlucosaAyunas" href="#" title="¿Dudas sobre Glucosa en Ayunas?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="gluAyunas" name="gluAyunas" placeholder="Glucosa en Ayunas ..." required step="any" min="40" max="450">
+													<input type="text" class="form-control" id="gluAyunas" name="gluAyunas" placeholder="Glucosa en Ayunas ..." required step="any" min="40" max="450" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de glucosa en ayunas.
 													</div>
@@ -180,7 +180,7 @@
 												<label><b>Presión Sanguinea Diastólica:</b> (<b><font color ="green">PSD</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoPresionSanguineaDiastolica" href="#" title="¿Dudas sobre Presión Sanguinea Diastólica?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="preSangDias" name="preSangDias" placeholder="Presión Sanguinea Diastólica ..." required step="any" min="30" max="250">
+													<input type="text" class="form-control" id="preSangDias" name="preSangDias" placeholder="Presión Sanguinea Diastólica ..." required step="any" min="30" max="250" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de presion sanguinea.
 													</div>
@@ -197,7 +197,7 @@
 												<label><b>Espesor Pliegue Cutaneo de Triceps:</b> (<b><font color ="green">EPC</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoEspesorPliegueCutTri" href="#" title="¿Dudas sobre Espesor del Pliegue Cutaneo de Triceps?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="esPliegCutTri" name="esPliegCutTri" placeholder="Espesor Pliegue Cutaneo Triceps ..." required step="any" min="0" max="100">
+													<input type="text" class="form-control" id="esPliegCutTri" name="esPliegCutTri" placeholder="Espesor Pliegue Cutaneo Triceps ..." required step="any" min="0" max="100" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de espesor del triceps.
 													</div>
@@ -214,7 +214,7 @@
 												<label><b>Insulina: </b> (<b><font color ="green">INS</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoInsulina" href="#" title="¿Dudas sobre Insulina?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="ins" name="ins" placeholder="Insulina ..." required step="any" min="0" max="1000">
+													<input type="text" class="form-control" id="ins" name="ins" placeholder="Insulina ..." required step="any" min="0" max="1000 onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de insulina.
 													</div>
@@ -231,7 +231,7 @@
 												<label><b>Indice de Masa Corporal:</b> (<b><font color ="green">IMC</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoImc" href="#" title="¿Dudas sobre Indice Masa Corporal?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="imc" name="imc" placeholder="Indice Masa Corporal ..." required step="any" min="0" max="100">
+													<input type="text" class="form-control" id="imc" name="imc" placeholder="Indice Masa Corporal ..." required step="any" min="0" max="100" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de indice de masa corporal.
 													</div>
@@ -248,7 +248,7 @@
 												<label><b>Función Pedigrí de Diabetes:</b> (<b><font color ="green">FPD</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#inFuncionPedigriDiab" href="#" title="¿Dudas sobre Función Pedigrí Diabetes?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="funcPediDiab" name="funcPediDiab" placeholder="Función Pedigrí Diabetes ..." required step="any" min="0" max="5">
+													<input type="text" class="form-control" id="funcPediDiab" name="funcPediDiab" placeholder="Función Pedigrí Diabetes ..." required step="any" min="0" max="5" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de funcion de pedigree.
 													</div>
@@ -265,7 +265,7 @@
 												<label><b>Edad en Años:</b> (<b><font color ="green">EDA</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoEdadA" href="#" title="¿Dudas sobre Edad en Años?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="edadAnos" name="edadAnos" placeholder="Edad en Años ..." required min="0" max="120">
+													<input type="text" class="form-control" id="edadAnos" name="edadAnos" placeholder="Edad en Años ..." required min="0" max="120" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese una edad valida.
 													</div>
@@ -283,7 +283,7 @@
 												<label><b>Nivel de Estrés:</b> (<b><font color ="green">NES</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoNivelEstres" href="#" title="¿Dudas sobre Nivel de Estrés?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="nivelEst" name="nivelEst" placeholder="Nivel de Estres ..." required step="any" min="0" max="450">
+													<input type="text" class="form-control" id="nivelEst" name="nivelEst" placeholder="Nivel de Estres ..." required step="any" min="0" max="450" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de nivel de estres.
 													</div>
@@ -300,7 +300,7 @@
 												<label><b>Colesterol:</b> (<b><font color ="green">COL</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoColesterol" href="#" title="¿Dudas sobre Colesterol?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="colesterol" name="colesterol" placeholder="Colesterol ..." required step="any" min="0" max="400">
+													<input type="text" class="form-control" id="colesterol" name="colesterol" placeholder="Colesterol ..." required step="any" min="0" max="400" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de colesterol.
 													</div>
@@ -317,7 +317,7 @@
 												<label><b>Trigliceridos:</b> (<b><font color ="green">TRI</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoTrigliceridos" href="#" title="¿Dudas sobre Trigliceridos?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="trigliceridos" name="trigliceridos" placeholder="Trigliceridos ..." required step="any" min="0" max="700">
+													<input type="text" class="form-control" id="trigliceridos" name="trigliceridos" placeholder="Trigliceridos ..." required step="any" min="0" max="700" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor valido de triglicerios.
 													</div>
@@ -334,7 +334,7 @@
 												<label><b>Glucemia Capilar:</b> (<b><font color ="green">GLU</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoGlucemiaCap" href="#" title="¿Dudas sobre Glucemia Capilar?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="glucemiaCap" name="glucemiaCap" placeholder="Glucemia Capilar ..." required step="any" min="50" max="450">
+													<input type="text" class="form-control" id="glucemiaCap" name="glucemiaCap" placeholder="Glucemia Capilar ..." required step="any" min="50" max="450" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor correcto de glucemia capilar.
 													</div>
@@ -351,7 +351,7 @@
 												<label><b>Glucemia Posprandial:</b> (<b><font color ="green">GPO</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoGlucemiaPosp" href="#" title="¿Dudas sobre Glucemia Posprandial?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="glucemiaPosp" name="glucemiaPosp" placeholder="Glucemia Posprandial ..." required step="any" min="50" max="450">
+													<input type="text" class="form-control" id="glucemiaPosp" name="glucemiaPosp" placeholder="Glucemia Posprandial ..." required step="any" min="50" max="450" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor correcto de glucemia posprandial.
 													</div>
@@ -368,7 +368,7 @@
 												<label><b>Hemoglobina Glicosilada:</b> (<b><font color ="green">HGL</font></b>)</label>
 												<div class="input-group-append">
 													<a class="input-group-text" data-toggle="modal" data-target="#infoHemoglobGlic" href="#" title="¿Dudas sobre Hemoglobina Glicosilada?"><i class="fas fa-question"></i></a>
-													<input type="number" class="form-control" id="hemoGlic" name="hemoGlic" placeholder="Hemoglobina Glicosilada ..." required step="any" min="0" max="10">
+													<input type="text" class="form-control" id="hemoGlic" name="hemoGlic" placeholder="Hemoglobina Glicosilada ..." required step="any" min="0" max="10" onkeypress="return onlyNumbers(event)">
 													<div class="invalid-feedback">
 														ingrese un valor correcto de hemoglobina glicosilada.
 													</div>
@@ -633,6 +633,7 @@
 			<!-- /.content -->
 
 		</div>
+		<script src="js/sweetalert2.all.js"></script>
 		<script src="js/form.js"></script>
 		<script src="js/validation.js"></script>
 
