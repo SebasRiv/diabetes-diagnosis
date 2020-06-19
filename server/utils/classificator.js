@@ -3,12 +3,6 @@ const fs = require('fs');
 
 const { numVariables, boolVariables, variablePathData } = require('./utilities');
 
-// let numVariables = ["pregnancies", "bloodpDiastolica", "tricepThickness", "alcohol", "insulina", "bmi", "dpf", "age", "colesterol", "cicatrizacion", "cholesterol", "dolor", "ejercicio", "nivelEstres", "farmacos", "fatiga", "fuma", "gender", "glucemiaPostpandial", "glucemiaPrepandial", "AlimenGrasos", "hemoGlico", "sendetario", "triglicerios", "visionBorrosa"];
-
-//Datos para probar las funciones
-// let datos = JSON.parse(fs.readFileSync('server/data/data-glucemia-post.json'));
-// let datos3 = JSON.parse(fs.readFileSync('server/data/data-pregnancies.json'));
-// let datos4 = JSON.parse(fs.readFileSync('server/data/Data.json'));
 let datosBool = JSON.parse(fs.readFileSync('server/data/data-bool.json'));
 
 function getData(path) {
@@ -21,42 +15,51 @@ function classification(object) {
     // El el parametro object es el que trae la 
     // información del sistema de captura
     // y despues se separan booleanas (o binomiales) y numericas
-    let numVars = [];let boolVars = {};let data = [];
-    let aceptedVariables = {};let i = 0;
+    let numVars = []; let boolVars = {}; let data = [];
+    let aceptedVariables = {}; let i = 0;
     // Se guarda el nombre de la variable numerica 
     // y su valor en el arreglo
     for (const iterator of numVariables) {
-        const val = {variable: iterator,value: object[iterator]};
-        numVars.push(val);}
+        const val = { variable: iterator, value: object[iterator] };
+        numVars.push(val);
+    }
     // Se guarda el nombre de la variable binomial y su valor
     for (const iterator of boolVariables) {
-        boolVars[iterator] = object[iterator];}
+        boolVars[iterator] = object[iterator];
+    }
     // Despues de separar las variables se obitene la data de c/u
     for (const iterator of variablePathData) {
-        data.push(getData(iterator.path));}
+        data.push(getData(iterator.path));
+    }
     // Se procede a clasificar las numericas primeramente 
     //¡IMPORTANTE EL ORDEN DE LAS VARIABLES!
     for (const iterator of numVars) {
-        const result = clasificationNum(categoriesNum(data[i]),
-        iterator.value);
+        const result = clasificationNum(categoriesNum(data[i]), iterator.value);
         if (result[0] > result[1]) {
-            aceptedVariables[iterator.variable] = iterator.value;}
-            i++;}
+            aceptedVariables[iterator.variable] = iterator.value;
+        }
+        i++;
+    }
     // Se clasifican las binomiales
     const booldata = clasificationBool(boolVars, datosBool);
     if (booldata[0] > booldata[1]) {
         for (const iterator of boolVariables) {
             if (object[iterator] === 1) {
-                aceptedVariables[iterator] = object[iterator];}}}
-    // console.log(aceptedVariables);
-    return aceptedVariables;}
+                aceptedVariables[iterator] = object[iterator];
+            }
+        }
+    }
+    return aceptedVariables;
+}
 
 function featureQuantifies(feature, data) {
-    let quantifyPositive = 0;let quantifyNegative = 0;
+    let quantifyPositive = 0; let quantifyNegative = 0;
     for (const iterator of data) {
-        if (iterator[feature] === 1 && iterator.diabetes === 1) {quantifyPositive++;} 
-        else if (iterator[feature] === 1 && iterator.diabetes === 0) {quantifyNegative++;}}
-    return [quantifyPositive, quantifyNegative];}
+        if (iterator[feature] === 1 && iterator.diabetes === 1) { quantifyPositive++; }
+        else if (iterator[feature] === 1 && iterator.diabetes === 0) { quantifyNegative++; }
+    }
+    return [quantifyPositive, quantifyNegative];
+}
 
 //Para  las variables binomiales
 function categoriesBool(data) {
@@ -124,12 +127,7 @@ function normDist(variableData, x) {
     let variance = math.variance(variableData);
     let mean = math.mean(variableData);
 
-    // console.log('Varianza', variance);
-    // console.log('Media', mean);
-
     let probability = (1 / (math.sqrt(2 * math.pi * variance))) * Math.exp(- Math.pow((x - mean), 2) / (2 * variance));
-
-    // console.log('Resultado: ', probability);
 
     return probability;
 }
@@ -161,11 +159,9 @@ function bernoulliDist(value, prob) {
 
 function clasificationBool(values, data) {
 
-    // let variablesBool = ['exercise', 'sedentary_life', 'smoke', 'alcoholism', 'fatty_fod', 'blurry_vision', 'fatigue', 'pain_hands_feet', 'slow_healing', 'drugs'];
-
     const probabilities = categoriesBool(data);
-    let class1 = probabilities[0]/probabilities[2]
-    let class2 = probabilities[1]/probabilities[2];
+    let class1 = probabilities[0] / probabilities[2]
+    let class2 = probabilities[1] / probabilities[2];
     let i = 0;
 
     for (const iterator of probabilities[3]) {
@@ -175,74 +171,8 @@ function clasificationBool(values, data) {
 
         i++;
     }
-
-    // console.log(class1, class2, class1 > class2);
-
     return [class1, class2];
 }
-
-// Objeto de prueba de como deber llegar al clasificador
-// const example = {
-//     pregnancies: 3,
-//     preprandial_glucose: 100,
-//     diastolic_blood_pressure: 60,
-//     triceps_skin_fold_thickness: 10,
-//     serum_insulin: 60,
-//     body_mass_index: 27.8,
-//     diabetes_pedigree_function: 1.5,
-//     age: 25, 
-//     stress_level: 400,
-//     cholesterol: 250,
-//     triglyceries: 100,
-//     gender: 0,
-//     capillar_glucose: 300,
-//     postprandial_glucose: 140,
-//     glycosylated_hemoglobin: 3.5,
-//     exercise: 0,
-//     sedentary_life: 0,
-//     smoke: 1,
-//     alcoholism: 1,
-//     fatty_fod: 1,
-//     blurry_vision: 0,
-//     fatigue: 1,
-//     pain_hands_feet: 0,
-//     slow_healing: 1,
-//     drugs: 1
-// }
-
-// Objeto para probar las variables binomiales
-// const example2 = {
-//     exercise: 0,
-//     sedentary_life: 1,
-//     smoke: 1,
-//     alcoholism: 0,
-//     fatty_fod: 0,
-//     blurry_vision: 1,
-//     fatigue: 0,
-//     pain_hands_feet: 1,
-//     slow_healing: 0,
-//     drugs: 1
-// }
-
-let dato = 90;
-
-//console.log(classification(example));
-
-// console.log(clasificationNum(categoriesNum(datos4), dato));
-
-// console.log(clasificationBool(example2, datosBool));
-
-// console.log(clasificationNum(categoriesNum(datos4), dato));
-
-// console.log(categoriesBool(datosBool));
-
-//console.log(clasificationBool("Si"));
-
-// console.log(categoriesNum(datos3));
-
-// console.log(clasificationNum(categoriesNum(datos3), dato));
-
-// console.log(datos3[0].value);
 
 module.exports = {
     classification,

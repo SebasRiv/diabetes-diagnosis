@@ -6,7 +6,7 @@ const Diagnostico = require('../models/diagnosis');
 const diagnosisCtrl = {};
 
 const { classification: classicator } = require('../utils/classificator');
-const { flow, Diagnosis, execute } = require('../utils/expertSystem');
+const { flow, Diagnosis, execute } = require('../utils/reasoningSystem');
 const { numVariables, boolVariables } = require('../utils/utilities');
 
 diagnosisCtrl.getDiagnostics = (req, res) => {
